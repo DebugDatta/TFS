@@ -212,7 +212,7 @@ export default function OptimizedFinsightSection() {
       id="insights"
       className="relative min-h-screen py-12 sm:py-16 lg:py-20 overflow-hidden"
       style={{
-        backgroundColor: "#101E36", // Solid navy background
+        backgroundColor: "#012947",
       }}
     >
       {/* Professional Grid Background */}
@@ -245,7 +245,7 @@ export default function OptimizedFinsightSection() {
               <BookOpen className="w-6 h-6 text-finance-navy" />
             </div>
             <div className="text-left">
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white font-league-spartan">
                 <span className="text-finance-teal">FINSIGHT</span>
               </h2>
               <motion.p
@@ -307,7 +307,7 @@ export default function OptimizedFinsightSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 1 }}
         >
-          <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-r from-[#5ce2d3]/20 to-[#8dd9ea]/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 max-w-2xl mx-auto">
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
               Stay Updated
             </h3>
@@ -319,7 +319,7 @@ export default function OptimizedFinsightSection() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold px-6 sm:px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
+                      className="bg-gradient-to-r from-[#5ce2d3] to-[#8dd9ea] hover:from-[#5ce2d3]/90 hover:to-[#8dd9ea]/90 text-white font-semibold px-6 sm:px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
                 onClick={() => {
                   if (featuredMagazine.link) {
                     window.open(featuredMagazine.link, "_blank");
@@ -363,10 +363,10 @@ export default function OptimizedFinsightSection() {
             >
               <div className="relative bg-gradient-to-br from-slate-900/95 to-slate-800/95 backdrop-blur-2xl rounded-2xl sm:rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
                 {/* Header - Mobile Responsive */}
-                <div className="relative p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-cyan-600/20">
+                <div className="relative p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-[#5ce2d3]/20 via-[#8dd9ea]/20 to-[#5ce2d3]/20">
                   <div className="flex items-start justify-between">
                     <div className="flex items-start space-x-4 sm:space-x-6 flex-1">
-                      <div className="w-16 h-20 sm:w-20 sm:h-24 lg:w-24 lg:h-32 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-16 h-20 sm:w-20 sm:h-24 lg:w-24 lg:h-32 bg-gradient-to-br from-[#5ce2d3] to-[#8dd9ea] rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
                         <BookOpen className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-white" />
                       </div>
 
@@ -374,7 +374,7 @@ export default function OptimizedFinsightSection() {
                         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 truncate">
                           {selectedMagazine.title}
                         </h3>
-                        <p className="text-base sm:text-lg lg:text-xl text-blue-300 mb-2 sm:mb-4">
+                          <p className="text-base sm:text-lg lg:text-xl text-[#8dd9ea] mb-2 sm:mb-4">
                           {selectedMagazine.edition}
                         </p>
                         <p className="text-white/80 leading-relaxed text-sm sm:text-base hidden sm:block">
@@ -466,7 +466,7 @@ export default function OptimizedFinsightSection() {
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                     <Button
                       size="lg"
-                      className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold px-6 sm:px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
+                className="bg-gradient-to-r from-[#5ce2d3] to-[#8dd9ea] hover:from-[#5ce2d3]/90 hover:to-[#8dd9ea]/90 text-white font-semibold px-6 sm:px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
                     >
                       <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                       Download PDF

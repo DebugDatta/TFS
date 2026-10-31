@@ -43,7 +43,7 @@ export default function MobileConclaveSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white font-league-spartan">
             FLAGSHIP <span className="text-finance-teal">CONCLAVE</span>
           </h2>
           <p className="text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto px-2">

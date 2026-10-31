@@ -55,7 +55,7 @@ export default function ContactSection() {
       id="contact"
       className="relative py-20 overflow-hidden"
       style={{
-        backgroundColor: "#12333E", // Solid dark teal background
+        backgroundColor: "#012947",
       }}
     >
       <div className="container mx-auto px-6 relative z-10">
@@ -66,7 +66,7 @@ export default function ContactSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white font-league-spartan">
             Get In <span className="text-finance-teal">Touch</span>
           </h2>
           <div className="w-24 h-1 bg-finance-teal mx-auto mb-6" />
@@ -84,7 +84,7 @@ export default function ContactSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8"
           >
-            <h3 className="text-3xl font-bold text-finance-teal mb-8">
+            <h3 className="text-3xl font-bold text-finance-teal mb-8 font-league-spartan">
               Let's Connect
             </h3>
 
@@ -102,7 +102,7 @@ export default function ContactSection() {
                     <info.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-finance-teal mb-1">
+                    <h4 className="text-lg font-semibold text-finance-teal mb-1 font-league-spartan">
                       {info.title}
                     </h4>
                     <p className="text-white/90 font-medium">{info.details}</p>
@@ -119,7 +119,7 @@ export default function ContactSection() {
               transition={{ duration: 0.6, delay: 0.7 }}
               className="pt-8"
             >
-              <h4 className="text-xl font-semibold text-finance-teal mb-4">
+              <h4 className="text-xl font-semibold text-finance-teal mb-4 font-league-spartan">
                 Follow Us
               </h4>
               <div className="flex space-x-4">
@@ -147,7 +147,7 @@ export default function ContactSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="bg-finance-navy-light/95 rounded-xl p-8 border border-finance-teal/30 shadow-lg"
           >
-            <h3 className="text-2xl font-bold text-finance-teal mb-6">
+            <h3 className="text-2xl font-bold text-finance-teal mb-6 font-league-spartan">
               Find Us Here
             </h3>
 

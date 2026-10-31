@@ -405,7 +405,7 @@ export default function ModernLuminariesSection() {
       ref={sectionRef}
       className="relative min-h-screen py-20 overflow-hidden"
       style={{
-        backgroundColor: "#112240", // Solid dark blue background
+        backgroundColor: "#012947",
       }}
     >
       {/* Professional Grid Pattern */}
@@ -414,7 +414,7 @@ export default function ModernLuminariesSection() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(0, 212, 204, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 212, 204, 0.1) 1px, transparent 1px)",
+              "linear-gradient(rgba(92, 226, 211, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(92, 226, 211, 0.1) 1px, transparent 1px)",
             backgroundSize: "40px 40px",
           }}
         />
@@ -428,7 +428,7 @@ export default function ModernLuminariesSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <motion.h2 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+          <motion.h2 className="text-5xl md:text-7xl font-bold mb-6 text-white font-league-spartan">
             Meet Our <span className="text-finance-teal">Luminaries</span>
           </motion.h2>
           <motion.div

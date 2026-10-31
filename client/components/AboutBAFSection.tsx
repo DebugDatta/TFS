@@ -36,7 +36,7 @@ export default function AboutBAFSection() {
       id="about-baf"
       className="relative py-20 overflow-hidden"
       style={{
-        backgroundColor: "#112240", // Solid dark blue background
+        backgroundColor: "#012947",
       }}
     >
       <div className="container mx-auto px-6 relative z-10">
@@ -47,7 +47,7 @@ export default function AboutBAFSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white font-league-spartan">
             About <span className="text-finance-teal">BAF</span>
           </h2>
           <div className="w-24 h-1 bg-finance-teal mx-auto mb-6" />
@@ -60,12 +60,12 @@ export default function AboutBAFSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-3xl font-bold text-finance-teal mb-6">
+            <h3 className="text-3xl font-bold text-finance-teal mb-6 font-league-spartan">
               Bachelor of Accounting and Finance
             </h3>
             <div className="space-y-6 text-foreground/80 leading-relaxed">
               <div>
-                <h4 className="text-xl font-semibold text-finance-teal mb-3">
+                <h4 className="text-xl font-semibold text-finance-teal mb-3 font-league-spartan">
                   BAF Programme Foundation
                 </h4>
                 <p className="text-lg">

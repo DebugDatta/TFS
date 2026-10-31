@@ -176,7 +176,7 @@ export default function ProfessionalHeroSection() {
         <div className="text-center px-6 max-w-6xl mx-auto">
           {/* Professional Typography */}
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight finance-heading"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight finance-heading font-anton"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -201,7 +201,7 @@ export default function ProfessionalHeroSection() {
           >
             <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-finance-teal/20 to-finance-cyan/20 border border-finance-teal/50 rounded-full backdrop-blur-sm">
               <div className="w-2 h-2 bg-finance-teal rounded-full mr-3 animate-pulse"></div>
-              <span className="text-finance-teal font-semibold text-sm md:text-base tracking-wide">
+              <span className="text-finance-teal font-semibold text-sm md:text-base tracking-wide font-bebas-neue">
                 AN INITIATIVE BY DEPARTMENT OF ACCOUNTING AND FINANCE
               </span>
             </div>

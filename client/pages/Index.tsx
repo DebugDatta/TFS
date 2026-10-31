@@ -41,7 +41,7 @@ export default function Index() {
   const backgroundColor = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    ["rgb(0, 0, 18)", "rgb(26, 26, 46)", "rgb(51, 51, 77)"],
+    ["#012947", "#002042", "#002f3b"],
   );
 
   useEffect(() => {
@@ -70,7 +70,7 @@ export default function Index() {
       description:
         "Bachelor of Accounting & Finance - Building Future Financial Leaders",
       icon: BookOpen,
-      color: "from-blue-600 to-cyan-400",
+      color: "from-[#012947] to-[#5ce2d3]",
       stats: [
         { label: "Years of Excellence", value: "25+" },
         { label: "Alumni Network", value: "2000+" },
@@ -82,7 +82,7 @@ export default function Index() {
       title: "TFS Story",
       description: "Our Journey in Shaping Financial Education",
       icon: Award,
-      color: "from-finance-gold to-yellow-400",
+      color: "from-[#8dd9ea] to-[#5ce2d3]",
       milestones: [
         {
           year: "2018",
@@ -121,7 +121,7 @@ export default function Index() {
       title: "Aspirations",
       description: "Vision for the Future of Finance Education",
       icon: TrendingUp,
-      color: "from-green-500 to-emerald-400",
+      color: "from-[#5ce2d3] to-[#8dd9ea]",
       goals: [
         {
           title: "Industry Leadership",
@@ -247,7 +247,7 @@ export default function Index() {
     {
       name: "Faculty",
       theme: "academic",
-      color: "from-blue-500 to-indigo-600",
+      color: "from-[#002042] to-[#012947]",
       members: [
         {
           name: "Dr. Sanjay Parab",
@@ -279,7 +279,7 @@ export default function Index() {
     {
       name: "Trio Leadership",
       theme: "leadership",
-      color: "from-purple-500 to-pink-500",
+      color: "from-[#002f3b] to-[#5ce2d3]",
       members: [
         {
           name: "Arjun Patel",
@@ -301,7 +301,7 @@ export default function Index() {
     {
       name: "Networking Team",
       theme: "networking",
-      color: "from-green-500 to-teal-500",
+      color: "from-[#5ce2d3] to-[#002f3b]",
       members: [
         {
           name: "Kavya Joshi",
@@ -323,7 +323,7 @@ export default function Index() {
     {
       name: "Management",
       theme: "executive",
-      color: "from-finance-gold to-yellow-500",
+      color: "from-[#8dd9ea] to-[#5ce2d3]",
       members: [
         {
           name: "Vikram Agarwal",

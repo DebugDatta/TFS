@@ -240,7 +240,7 @@ export default function ECCStyleNavigation({
 
             {/* Title */}
             <div className="hidden sm:block">
-              <h1 className="text-sm md:text-lg font-bold text-finance-teal">
+              <h1 className="text-sm md:text-lg font-bold text-finance-teal font-bebas-neue">
                 The Finance Symposium
               </h1>
               <p className="text-xs text-muted-foreground">

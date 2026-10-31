@@ -57,32 +57,40 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Updated finance-themed colors with teal and teal-green focus
         finance: {
-          navy: "#0B1426", // Deep navy base
-          "navy-light": "#1A2B42", // Lighter navy
-          "navy-medium": "#2A3B52", // Medium navy
-          teal: "#008B8B", // Primary teal - more balanced
-          "teal-light": "#20B2AA", // Light sea green
-          "teal-dark": "#006666", // Dark teal
-          "teal-medium": "#00A0A0", // Medium teal
-          "teal-green": "#2E8B57", // Sea green
-          "teal-mint": "#40E0D0", // Turquoise for highlights
-          cyan: "#008B8B", // Teal-based cyan
-          "cyan-light": "#AFEEEE", // Pale turquoise
-          blue: "#1E3A5F", // Professional blue
-          "blue-light": "#3D5A7F", // Lighter blue
-          accent: "#008B8B", // Primary accent (teal)
-          red: "#DC143C", // Error/negative states
-          green: "#2E8B57", // Success using teal-green
-          gold: "#20B2AA", // Replace gold with light sea green
-          electric: "#40E0D0", // Electric turquoise for accents
+          navy: "#012947",
+          "navy-light": "#002042",
+          "navy-medium": "#002f3b",
+          teal: "#5ce2d3",
+          "teal-light": "#8dd9ea",
+          "teal-dark": "#002f3b",
+          "teal-medium": "#5ce2d3",
+          "teal-green": "#5ce2d3",
+          "teal-mint": "#5ce2d3",
+          cyan: "#8dd9ea",
+          "cyan-light": "#8dd9ea",
+          blue: "#012947",
+          "blue-light": "#002042",
+          accent: "#8dd9ea",
+          red: "#8dd9ea",
+          green: "#5ce2d3",
+          gold: "#8dd9ea",
+          electric: "#5ce2d3",
+          mint: "#5ce2d3",
         },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        sans: ["Canvas Sans", "sans-serif"],
+        "league-spartan": ["League Spartan", "sans-serif"],
+        "archivo-black": ["Archivo Black", "sans-serif"],
+        anton: ["Anton", "sans-serif"],
+        "bebas-neue": ["Bebas Neue", "sans-serif"],
+        "playfair-display": ["Playfair Display", "serif"],
       },
       keyframes: {
         "accordion-down": {

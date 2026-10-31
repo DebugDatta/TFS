@@ -43,7 +43,7 @@ export default function AboutSection() {
       id="about"
       className="relative py-20 overflow-hidden"
       style={{
-        backgroundColor: "#101E36", // Solid navy background
+        backgroundColor: "#012947",
       }}
     >
       <div className="container mx-auto px-6 relative z-10">
@@ -54,7 +54,7 @@ export default function AboutSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={isMobile ? { duration: 0 } : { duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white font-league-spartan">
             About <span className="text-finance-teal">TFS</span>
           </h2>
           <div className="w-24 h-1 bg-finance-teal mx-auto mb-6" />
@@ -69,12 +69,12 @@ export default function AboutSection() {
               isMobile ? { duration: 0 } : { duration: 0.8, delay: 0.2 }
             }
           >
-            <h3 className="text-3xl font-bold text-finance-teal mb-6">
+            <h3 className="text-3xl font-bold text-finance-teal mb-6 font-league-spartan">
               Bridging Theory and Practice in Finance
             </h3>
             <div className="space-y-6 text-foreground/80 leading-relaxed">
               <div>
-                <h4 className="text-xl font-semibold text-finance-teal mb-3">
+                <h4 className="text-xl font-semibold text-finance-teal mb-3 font-league-spartan">
                   Our Story
                 </h4>
                 <p className="text-lg">

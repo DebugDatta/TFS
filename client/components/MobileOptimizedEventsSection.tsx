@@ -317,13 +317,13 @@ export default function MobileOptimizedEventsSection() {
       id="events"
       className="relative min-h-screen py-12 sm:py-16 md:py-20 overflow-hidden mobile-container"
       style={{
-        backgroundColor: "#101E36", // Solid navy background
+        backgroundColor: "#012947",
       }}
     >
       {/* Professional grid background */}
       <div className="absolute inset-0 overflow-hidden opacity-10">
         <div className="absolute inset-0" style={{
-          backgroundImage: 'linear-gradient(rgba(0, 212, 204, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 212, 204, 0.1) 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(rgba(92, 226, 211, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(92, 226, 211, 0.1) 1px, transparent 1px)',
           backgroundSize: '50px 50px'
         }} />
       </div>
@@ -355,10 +355,10 @@ export default function MobileOptimizedEventsSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="text-center mb-8 sm:mb-12">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00D4CC] via-[#FFD700] to-[#00D4CC] mb-3">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5ce2d3] via-[#8dd9ea] to-[#5ce2d3] mb-3">
               Past Events Excellence
             </h3>
-            <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-transparent via-[#00D4CC] to-transparent mx-auto" />
+            <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-transparent via-[#5ce2d3] to-transparent mx-auto" />
           </div>
 
           {/* Mobile-first grid */}
@@ -383,10 +383,10 @@ export default function MobileOptimizedEventsSection() {
           className="relative"
         >
           <div className="text-center mb-12 sm:mb-16">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 bg-gradient-to-r from-[#FFD700] via-[#00D4CC] to-[#FFD700] bg-clip-text text-transparent">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 bg-gradient-to-r from-[#8dd9ea] via-[#5ce2d3] to-[#8dd9ea] bg-clip-text text-transparent">
               Upcoming Events Timeline
             </h3>
-            <div className="w-20 sm:w-32 h-1 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent mx-auto mb-3" />
+            <div className="w-20 sm:w-32 h-1 bg-gradient-to-r from-transparent via-[#8dd9ea] to-transparent mx-auto mb-3" />
             <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto px-4">
               Stay updated with our exciting upcoming events and secure your
               spot!

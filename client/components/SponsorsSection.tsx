@@ -220,7 +220,7 @@ export default function SponsorsSection() {
 
             {/* Description - appears on hover */}
             <motion.div className="absolute inset-0 bg-finance-navy/95 backdrop-blur-sm p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto rounded-xl">
-              <h4 className="text-lg font-bold text-finance-teal mb-3 text-center">
+              <h4 className="text-lg font-bold text-finance-teal mb-3 text-center font-league-spartan">
                 {sponsor.name}
               </h4>
               <p className="text-sm text-foreground/80 mb-4 leading-relaxed text-center">
@@ -262,7 +262,7 @@ export default function SponsorsSection() {
       ref={sectionRef}
       id="sponsors"
       style={{
-        backgroundColor: "#12333E", // Solid dark teal background
+        backgroundColor: "#012947",
       }}
       className="relative py-20 overflow-hidden"
     >
@@ -274,7 +274,7 @@ export default function SponsorsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white font-league-spartan">
             OUR STRATEGIC <span className="text-finance-teal">PARTNERS</span>
           </h2>
           <div className="w-32 h-1 bg-finance-teal mx-auto mb-6" />
@@ -322,7 +322,7 @@ export default function SponsorsSection() {
             >
               <div className="max-w-md mx-auto bg-finance-navy/30 backdrop-blur-sm rounded-xl p-8 border border-finance-gold/20">
                 <div className="text-6xl mb-4">🚧</div>
-                <h3 className="text-2xl font-bold text-finance-gold mb-4">
+                <h3 className="text-2xl font-bold text-finance-gold mb-4 font-league-spartan">
                   Coming Soon
                 </h3>
                 <p className="text-foreground/70">
@@ -343,7 +343,7 @@ export default function SponsorsSection() {
                     transition={{ duration: 0.8, delay: 0.7 }}
                     className="mb-16"
                   >
-                    <h3 className="text-center text-2xl font-bold text-finance-gold mb-8">
+                    <h3 className="text-center text-2xl font-bold text-finance-gold mb-8 font-league-spartan">
                       Associate Sponsors
                     </h3>
                     <motion.div
@@ -373,7 +373,7 @@ export default function SponsorsSection() {
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.8, delay: 0.8 }}
                   >
-                    <h3 className="text-center text-2xl font-bold text-finance-gold mb-8">
+                    <h3 className="text-center text-2xl font-bold text-finance-gold mb-8 font-league-spartan">
                       Partner Sponsors
                     </h3>
                     <motion.div

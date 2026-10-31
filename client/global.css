@@ -32,7 +32,7 @@
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 346.8 77.2% 49.8%;
-    --glow-color: #ffd700;
+    --glow-color: #8dd9ea;
   }
 }
 
@@ -41,28 +41,28 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
 }
 
 /* Professional finance-themed gradients and animations */
 @layer utilities {
   .finance-gradient {
-    background: linear-gradient(135deg, #0b1426 0%, #1a2b42 50%, #2a3b52 100%);
+    background: linear-gradient(135deg, #012947 0%, #002042 50%, #002f3b 100%);
   }
 
   .finance-glow {
     box-shadow:
-      0 0 20px rgba(32, 178, 170, 0.4),
-      0 0 40px rgba(0, 139, 139, 0.3),
+      0 0 20px rgba(92, 226, 211, 0.4),
+      0 0 40px rgba(141, 217, 234, 0.3),
       0 8px 32px rgba(0, 0, 0, 0.4);
   }
 
   .finance-border-glow {
-    border: 1px solid rgba(32, 178, 170, 0.4);
+    border: 1px solid rgba(92, 226, 211, 0.4);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.1),
-      0 0 20px rgba(32, 178, 170, 0.2);
+      0 0 20px rgba(92, 226, 211, 0.2);
   }
 
   .market-card-hover {
@@ -136,11 +136,11 @@
 
 @keyframes price-change-flash {
   0% {
-    background-color: rgba(255, 215, 0, 0.2);
+    background-color: rgba(141, 217, 234, 0.2);
     transform: scale(1);
   }
   50% {
-    background-color: rgba(255, 215, 0, 0.4);
+    background-color: rgba(141, 217, 234, 0.4);
     transform: scale(1.02);
   }
   100% {
@@ -341,15 +341,15 @@
 /* High contrast mode support for accessibility */
 @media (prefers-contrast: high) {
   .finance-text-gold {
-    color: #ffff00;
+    color: #8dd9ea;
   }
 
   .finance-border-gold {
-    border-color: #ffff00;
+    border-color: #8dd9ea;
   }
 
   .finance-bg-navy {
-    background-color: #000033;
+    background-color: #012947;
   }
 }
 
@@ -434,7 +434,7 @@
   left: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(to bottom, #20b2aa, #40e0d0);
+  background: linear-gradient(to bottom, #5ce2d3, #8dd9ea);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
