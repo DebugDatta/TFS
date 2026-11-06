@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  TrendingUp,
-  TrendingDown,
-  BarChart3,
-  Activity,
+  TrendUp as TrendingUp,
+  TrendDown as TrendingDown,
+  ChartBar as BarChart3,
+  ActivityIcon as Activity,
   CheckCircle,
-  AlertTriangle,
-  DollarSign,
-  Building2,
+  Warning as AlertTriangle,
+  CurrencyDollar as DollarSign,
+  Buildings as Building2,
   Globe,
   ArrowUpRight,
   ArrowDownRight,
   Clock,
-  Wifi,
-  WifiOff,
-  RefreshCw,
+  WifiHigh as Wifi,
+  WifiSlash as WifiOff,
+  ArrowClockwise as RefreshCw,
   X,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";

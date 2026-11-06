@@ -6,7 +6,10 @@ import {
   MarketSentiment,
   safeFormatTimestamp,
 } from "../services/finnhubMarketData";
-import { ChevronDown, ExternalLink } from "lucide-react";
+import {
+  CaretDown as ChevronDown,
+  ArrowSquareOut as ExternalLink,
+} from "@phosphor-icons/react";
 import FixedMobileTicker from "./FixedMobileTicker";
 
 // Professional Market Ticker

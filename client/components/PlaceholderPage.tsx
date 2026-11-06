@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
-import { ArrowLeft, Sparkles } from "lucide-react";
+import {
+  ArrowLeft,
+  Sparkle as Sparkles,
+} from "@phosphor-icons/react";
 
 interface PlaceholderPageProps {
   title: string;

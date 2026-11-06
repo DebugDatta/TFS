@@ -1,6 +1,9 @@
 import React, { useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import { Search, ExternalLink } from "lucide-react";
+import {
+  MagnifyingGlass as Search,
+  ArrowSquareOut as ExternalLink,
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useSponsorsData } from "../hooks/useSponsorsData";

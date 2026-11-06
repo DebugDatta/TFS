@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  TrendingUp,
-  DollarSign,
-  PieChart,
-  BarChart3,
+  TrendUp as TrendingUp,
+  CurrencyDollar as DollarSign,
+  ChartPie as PieChart,
+  ChartBar as BarChart3,
   Target,
   Globe,
   Coins,
-  Building2,
-  Award,
-  Zap,
-} from "lucide-react";
+  Buildings as Building2,
+  Medal as Award,
+  Lightning as Zap,
+} from "@phosphor-icons/react";
 
 interface FinancialElement {
   id: string;

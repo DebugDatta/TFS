@@ -7,18 +7,18 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import {
-  Mail,
-  Linkedin,
+  Envelope as Mail,
+  LinkedinLogo as Linkedin,
   Star,
   Users,
   Crown,
-  Sparkles,
+  Sparkle as Sparkles,
   Brain,
-  Award,
-  ChevronLeft,
-  ChevronRight,
+  Medal as Award,
+  CaretLeft as ChevronLeft,
+  CaretRight as ChevronRight,
   X,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { useLuminariesData } from "../hooks/useLuminariesData";

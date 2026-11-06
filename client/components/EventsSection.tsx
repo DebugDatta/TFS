@@ -12,12 +12,12 @@ import {
   Trophy,
   Clock,
   MapPin,
-  ExternalLink,
-  ChevronRight,
-  Sparkles,
-  TrendingUp,
+  ArrowSquareOut as ExternalLink,
+  CaretRight as ChevronRight,
+  Sparkle as Sparkles,
+  TrendUp as TrendingUp,
   X,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { useEventPopup } from "../hooks/useEventPopup";

@@ -6,11 +6,11 @@ import {
   Trophy,
   Clock,
   MapPin,
-  ExternalLink,
-  ChevronRight,
+  ArrowSquareOut as ExternalLink,
+  CaretRight as ChevronRight,
   Eye,
   X,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { useEventPopup } from "../hooks/useEventPopup";

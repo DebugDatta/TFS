@@ -6,17 +6,17 @@ import { useEventPopup } from "../hooks/useEventPopup";
 import { useEventsData } from "../hooks/useEventsData";
 import { useMobile } from "../hooks/useMobile";
 import {
-  Menu,
+  List as Menu,
   X,
-  ChevronDown,
-  TrendingUp,
-  BarChart3,
+  CaretDown as ChevronDown,
+  TrendUp as TrendingUp,
+  ChartBar as BarChart3,
   Users,
   Calendar,
-  Building2,
-  Mail,
+  Buildings as Building2,
+  Envelope as Mail,
   GraduationCap,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import {
   NavigationMenu,
   NavigationMenuContent,

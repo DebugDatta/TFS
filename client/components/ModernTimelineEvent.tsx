@@ -4,11 +4,11 @@ import {
   Calendar,
   Clock,
   MapPin,
-  ExternalLink,
+  ArrowSquareOut as ExternalLink,
   Users,
-  Sparkles,
-  ChevronRight,
-} from "lucide-react";
+  Sparkle as Sparkles,
+  CaretRight as ChevronRight,
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 

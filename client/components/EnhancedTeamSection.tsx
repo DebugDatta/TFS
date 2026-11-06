@@ -1,15 +1,15 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  ChevronLeft,
-  ChevronRight,
+  CaretLeft as ChevronLeft,
+  CaretRight as ChevronRight,
   X,
-  Mail,
-  Linkedin,
-  Twitter,
-  ChevronDown,
-  ChevronUp,
-} from "lucide-react";
+  Envelope as Mail,
+  LinkedinLogo as Linkedin,
+  TwitterLogo as Twitter,
+  CaretDown as ChevronDown,
+  CaretUp as ChevronUp,
+} from "@phosphor-icons/react";
 
 interface TeamMember {
   name: string;

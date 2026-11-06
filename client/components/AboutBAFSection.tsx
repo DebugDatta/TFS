@@ -1,6 +1,11 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { GraduationCap, BookOpen, Briefcase, FileText } from "lucide-react";
+import {
+  GraduationCap,
+  BookOpen,
+  Briefcase,
+  FileText,
+} from "@phosphor-icons/react";
 
 const bafFeatures = [
   {

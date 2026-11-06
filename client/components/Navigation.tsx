@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
-  Menu,
+  List as Menu,
   X,
-  ChevronDown,
-  TrendingUp,
-  BarChart3,
+  CaretDown as ChevronDown,
+  TrendUp as TrendingUp,
+  ChartBar as BarChart3,
   Users,
   Calendar,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 
 interface NavigationProps {
   scrolled: boolean;

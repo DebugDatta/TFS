@@ -1,6 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
-import { TrendingUp, Users, Award, Target } from "lucide-react";
+import {
+  TrendUp as TrendingUp,
+  Users,
+  Medal as Award,
+  Target,
+} from "@phosphor-icons/react";
 
 const stats = [
   {
@@ -104,23 +109,19 @@ export default function AboutSection() {
           >
             {[
               {
-                src:
-                  "https://cdn.builder.io/api/v1/image/assets%2Fec53267d89ab44d08a2c376dc045e9e9%2F0f5273b6716a4240b73f697e6165774b?format=webp&width=800",
+                src: "/images/about-tfs/tfs-event-01.jpeg",
                 alt: "Event panel discussion photo 1",
               },
               {
-                src:
-                  "https://cdn.builder.io/api/v1/image/assets%2Fec53267d89ab44d08a2c376dc045e9e9%2F8a76cf3505e542e79fb6d964ed82753d?format=webp&width=800",
+                src: "/images/about-tfs/tfs-event-02.jpeg",
                 alt: "Event panel discussion photo 2",
               },
               {
-                src:
-                  "https://cdn.builder.io/api/v1/image/assets%2Fec53267d89ab44d08a2c376dc045e9e9%2Fc5cf76724a0a4830ad8f29befec4e99a?format=webp&width=800",
+                src: "/images/about-tfs/tfs-event-03.jpeg",
                 alt: "Event panel discussion photo 3",
               },
               {
-                src:
-                  "https://cdn.builder.io/api/v1/image/assets%2Fec53267d89ab44d08a2c376dc045e9e9%2Fc65abcb71050401c9d417d0c6af632bc?format=webp&width=800",
+                src: "/images/about-tfs/tfs-event-04.jpeg",
                 alt: "Event panel discussion photo 4",
               },
             ].map((photo, index) => (

@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMarketDashboard } from "../contexts/MarketDashboardContext";
 import {
-  TrendingUp,
-  TrendingDown,
+  TrendUp as TrendingUp,
+  TrendDown as TrendingDown,
   Calendar,
-  DollarSign,
-  Activity,
-  ChevronRight,
+  CurrencyDollar as DollarSign,
+  ActivityIcon as Activity,
+  CaretRight as ChevronRight,
   Eye,
-  EyeOff,
-} from "lucide-react";
+  EyeSlash as EyeOff,
+} from "@phosphor-icons/react";
 import {
   accurateMarketDataService,
   AccurateStockData,

@@ -19,18 +19,18 @@ import {
   Users,
   Calendar,
   BookOpen,
-  Award,
-  TrendingUp,
-  Building2,
+  Medal as Award,
+  TrendUp as TrendingUp,
+  Buildings as Building2,
   MapPin,
-  Mail,
+  Envelope as Mail,
   Phone,
   Globe,
-  ChevronRight,
+  CaretRight as ChevronRight,
   Play,
   Download,
-  ExternalLink,
-} from "lucide-react";
+  ArrowSquareOut as ExternalLink,
+} from "@phosphor-icons/react";
 
 export default function Index() {
   const [scrolled, setScrolled] = useState(false);

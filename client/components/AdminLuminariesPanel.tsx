@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { Users, Plus } from "lucide-react";
+import {
+  Users,
+  Plus,
+} from "@phosphor-icons/react";
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";

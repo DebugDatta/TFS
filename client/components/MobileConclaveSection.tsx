@@ -1,5 +1,9 @@
 import React, { useRef, useState } from "react";
-import { Clock, Users, ExternalLink } from "lucide-react";
+import {
+  Clock,
+  Users,
+  ArrowSquareOut as ExternalLink,
+} from "@phosphor-icons/react";
 import { useConclaveSessionsData } from "../hooks/useConclaveSessionsData";
 
 export default function MobileConclaveSection() {

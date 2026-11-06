@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMarketDashboard } from "../contexts/MarketDashboardContext";
-import { BarChart3, CheckCircle, AlertTriangle } from "lucide-react";
+import {
+  ChartBar as BarChart3,
+  CheckCircle,
+  Warning as AlertTriangle,
+} from "@phosphor-icons/react";
 import {
   finnhubMarketDataService,
   MarketSentiment,

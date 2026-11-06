@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  TrendingUp,
-  TrendingDown,
-  Activity,
-  DollarSign,
-  RefreshCw,
+  TrendUp as TrendingUp,
+  TrendDown as TrendingDown,
+  ActivityIcon as Activity,
+  CurrencyDollar as DollarSign,
+  ArrowClockwise as RefreshCw,
   X,
-  Filter,
+  Funnel as Filter,
   ArrowUpRight,
   ArrowDownRight,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import {
   Dialog,
   DialogContent,

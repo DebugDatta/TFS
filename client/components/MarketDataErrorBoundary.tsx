@@ -1,6 +1,11 @@
 import React, { Component, ReactNode } from "react";
 import { motion } from "framer-motion";
-import { AlertTriangle, RefreshCw, Activity, Wifi } from "lucide-react";
+import {
+  Warning as AlertTriangle,
+  ArrowClockwise as RefreshCw,
+  ActivityIcon as Activity,
+  WifiHigh as Wifi,
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 

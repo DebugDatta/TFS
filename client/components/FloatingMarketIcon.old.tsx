@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { TrendingUp, BarChart3, Activity, CheckCircle, AlertTriangle } from "lucide-react";
+import {
+  TrendUp as TrendingUp,
+  ChartBar as BarChart3,
+  ActivityIcon as Activity,
+  CheckCircle,
+  Warning as AlertTriangle,
+} from "@phosphor-icons/react";
 import {
   Dialog,
   DialogContent,

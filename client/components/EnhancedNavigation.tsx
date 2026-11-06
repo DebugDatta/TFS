@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSmoothScroll } from "../hooks/useSmoothScroll";
 import {
-  Menu,
+  List as Menu,
   X,
-  ChevronDown,
-  TrendingUp,
-  BarChart3,
+  CaretDown as ChevronDown,
+  TrendUp as TrendingUp,
+  ChartBar as BarChart3,
   Users,
   Calendar,
-  DollarSign,
-  PieChart,
-  Building2,
-  Mail,
-} from "lucide-react";
+  CurrencyDollar as DollarSign,
+  ChartPie as PieChart,
+  Buildings as Building2,
+  Envelope as Mail,
+} from "@phosphor-icons/react";
 
 interface EnhancedNavigationProps {
   scrolled: boolean;

@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import {
-  Mail,
+  Envelope as Mail,
   MapPin,
-  MessageCircle,
-  Instagram,
-  Linkedin,
-  ExternalLink,
-} from "lucide-react";
+  ChatCircle as MessageCircle,
+  InstagramLogo as Instagram,
+  LinkedinLogo as Linkedin,
+  ArrowSquareOut as ExternalLink,
+} from "@phosphor-icons/react";
 
 const contactInfo = [
   {

@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState, createContext, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Volume2, VolumeX, Settings } from "lucide-react";
+import {
+  SpeakerHigh as Volume2,
+  SpeakerX as VolumeX,
+  Gear as Settings,
+} from "@phosphor-icons/react";
 import { useMobile } from "../hooks/useMobile";
 
 interface SoundContextType {

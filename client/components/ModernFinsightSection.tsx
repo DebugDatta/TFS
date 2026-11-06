@@ -10,26 +10,26 @@ import {
 } from "framer-motion";
 import {
   BookOpen,
-  TrendingUp,
+  TrendUp as TrendingUp,
   Users,
   Calendar,
   Download,
   Eye,
   Share,
   Star,
-  ExternalLink,
-  Sparkles,
-  BarChart3,
-  PieChart,
-  LineChart,
-  DollarSign,
+  ArrowSquareOut as ExternalLink,
+  Sparkle as Sparkles,
+  ChartBar as BarChart3,
+  ChartPie as PieChart,
+  ChartLine as LineChart,
+  CurrencyDollar as DollarSign,
   Globe,
-  Zap,
+  Lightning as Zap,
   Brain,
   Target,
-  Award,
+  Medal as Award,
   ArrowUpRight,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { SectionMorphingElements } from "./Morphing3DElements";

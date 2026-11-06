@@ -3,18 +3,18 @@ import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSmoothScroll } from "../hooks/useSmoothScroll";
 import {
-  Menu,
+  List as Menu,
   X,
-  ChevronDown,
-  Home,
+  CaretDown as ChevronDown,
+  House as Home,
   Info,
   Calendar,
-  TrendingUp,
-  Building2,
+  TrendUp as TrendingUp,
+  Buildings as Building2,
   Users,
-  Mail,
-  BarChart3,
-} from "lucide-react";
+  Envelope as Mail,
+  ChartBar as BarChart3,
+} from "@phosphor-icons/react";
 import { useMarketDashboard } from "../contexts/MarketDashboardContext";
 
 interface ECCStyleNavigationProps {

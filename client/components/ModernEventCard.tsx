@@ -4,11 +4,11 @@ import {
   Calendar,
   Users,
   Trophy,
-  ChevronRight,
-  Sparkles,
+  CaretRight as ChevronRight,
+  Sparkle as Sparkles,
   Eye,
   ArrowUpRight,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 

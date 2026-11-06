@@ -8,27 +8,27 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import {
-  TrendingUp,
-  TrendingDown,
-  DollarSign,
-  PieChart,
-  BarChart3,
-  LineChart,
+  TrendUp as TrendingUp,
+  TrendDown as TrendingDown,
+  CurrencyDollar as DollarSign,
+  ChartPie as PieChart,
+  ChartBar as BarChart3,
+  ChartLine as LineChart,
   Target,
-  Zap,
+  Lightning as Zap,
   Globe,
   Brain,
   Coins,
   CreditCard,
-  Building2,
+  Buildings as Building2,
   Briefcase,
   Calculator,
-  Activity,
-  Award,
-  Gem,
+  ActivityIcon as Activity,
+  Medal as Award,
+  Diamond as Gem,
   Shield,
   Clock,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 
 interface FinancialElement {
   id: string;

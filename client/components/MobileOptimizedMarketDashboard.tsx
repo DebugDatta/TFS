@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
-  TrendingUp,
-  BarChart3,
-  Activity,
+  TrendUp as TrendingUp,
+  ChartBar as BarChart3,
+  ActivityIcon as Activity,
   CheckCircle,
-  AlertTriangle,
-  DollarSign,
-  Building2,
+  Warning as AlertTriangle,
+  CurrencyDollar as DollarSign,
+  Buildings as Building2,
   X,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";

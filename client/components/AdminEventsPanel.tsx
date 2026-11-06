@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   Plus,
   X,
-  Save,
-  Settings,
+  FloppyDisk as Save,
+  Gear as Settings,
   Calendar,
   Users,
   Trophy,
-  Mic,
+  Microphone as Mic,
   BookOpen,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useEventsData } from "../hooks/useEventsData";

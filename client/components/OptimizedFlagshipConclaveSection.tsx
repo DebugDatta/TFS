@@ -5,10 +5,10 @@ import {
   Clock,
   Users,
   MapPin,
-  ExternalLink,
-  ChevronDown,
-  ChevronUp,
-} from "lucide-react";
+  ArrowSquareOut as ExternalLink,
+  CaretDown as ChevronDown,
+  CaretUp as ChevronUp,
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { useConclaveSessionsData } from "../hooks/useConclaveSessionsData";
 import { isMobileDevice } from "../utils/mobileOptimization";

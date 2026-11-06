@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Lock, User, Eye, EyeOff, Shield, X } from "lucide-react";
+import {
+  Lock,
+  User,
+  Eye,
+  EyeSlash as EyeOff,
+  Shield,
+  X,
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useAuth } from "../hooks/useAuth";

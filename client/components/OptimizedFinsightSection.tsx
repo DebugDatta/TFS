@@ -2,21 +2,21 @@ import React, { useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import {
   BookOpen,
-  TrendingUp,
+  TrendUp as TrendingUp,
   Users,
   Calendar,
   Download,
   Eye,
   Share,
   Star,
-  ChevronLeft,
-  ChevronRight,
-  ExternalLink,
-  Sparkles,
-  Award,
+  CaretLeft as ChevronLeft,
+  CaretRight as ChevronRight,
+  ArrowSquareOut as ExternalLink,
+  Sparkle as Sparkles,
+  Medal as Award,
   ArrowUpRight,
   X,
-} from "lucide-react";
+} from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import {
