@@ -318,13 +318,13 @@ export default function ModernLuminariesSection() {
 
     return (
       <div
-        className="relative group"
+        className="relative group h-full"
         onMouseEnter={() => setHoveredCard(member.id)}
         onMouseLeave={() => setHoveredCard(null)}
       >
         {/* Professional Card Container */}
         <motion.div
-          className="relative h-80 sm:h-96"
+          className="relative h-full min-h-[22rem] sm:min-h-[24rem]"
           transition={{ duration: 0.3, ease: "easeOut" }}
         >
           {/* Main Professional Card */}
@@ -421,7 +421,7 @@ export default function ModernLuminariesSection() {
         />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Enhanced Section Header */}
         <motion.div
           className="text-center mb-16"
@@ -503,7 +503,7 @@ export default function ModernLuminariesSection() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 sm:gap-8 px-4 sm:px-0"
+            className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 lg:gap-8 max-w-7xl mx-auto"
           >
             {currentMembers.map((member, index) => (
               <MemberCard key={member.id} member={member} index={index} />
