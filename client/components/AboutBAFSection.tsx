@@ -21,8 +21,9 @@ const bafFeatures = [
   },
   {
     icon: GraduationCap,
-    title: "University Affiliation",
-    description: "Affiliated to the University of Mumbai",
+    title: "Distinguished Faculty",
+    description:
+      "Experienced educators dedicated to academic excellence and professional growth.",
   },
 ];
 

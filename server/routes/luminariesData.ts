@@ -83,6 +83,7 @@ const defaultConfig: LuminariesConfig = {
       ],
       expertise: [
         "Accountancy and Finance",
+        "Faculty Co-ordinator of TFS",
         "ESG",
         "Personal Finance",
         "Data Analytics",
