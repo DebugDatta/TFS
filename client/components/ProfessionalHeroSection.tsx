@@ -139,7 +139,7 @@ export default function ProfessionalHeroSection() {
           preload="metadata"
         >
           <source
-            src="https://cdn.builder.io/o/assets%2Fe85dfdd564234742bab315fb42ca6cc0%2Fcdaa0c914f444ba09397c133c8f6cab0?alt=media&token=89c8ffc7-fcb7-4ac8-95e3-4e03a2ebfee4&apiKey=e85dfdd564234742bab315fb42ca6cc0"
+            src="/videos/hero-bg.mp4"
             type="video/mp4"
           />
           {/* Fallback background color matching our palette */}
