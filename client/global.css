@@ -40,13 +40,48 @@
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  img,
+  svg,
+  video,
+  canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    transition: color 0.2s ease, opacity 0.2s ease;
   }
 }
 
 /* Professional finance-themed gradients and animations */
 @layer utilities {
+  .responsive-section {
+    width: min(100%, 1400px);
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 2vw, 2rem);
+  }
+
+  .responsive-section-full {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .finance-gradient {
     background: linear-gradient(135deg, #012947 0%, #002042 50%, #002f3b 100%);
   }
@@ -350,6 +385,24 @@
 
   .finance-bg-navy {
     background-color: #012947;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+
+  body {
+    line-height: 1.55;
+  }
+
+  section {
+    overflow-x: hidden;
+  }
+
+  .responsive-section {
+    padding-inline: 0.9rem;
   }
 }
 

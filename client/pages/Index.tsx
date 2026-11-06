@@ -346,7 +346,7 @@ export default function Index() {
 
   return (
     <EventPopupProvider>
-      <div className="min-h-screen">
+      <div className="min-h-screen overflow-x-hidden bg-finance-navy text-white">
         {/* Main Content */}
         <>
           <ECCStyleNavigation scrolled={scrolled} />
@@ -355,54 +355,54 @@ export default function Index() {
 
           {/* Hero Section */}
           <MarketDataErrorBoundary>
-            <section id="home">
+            <section id="home" className="responsive-section-full">
               <ProfessionalHeroSection />
             </section>
           </MarketDataErrorBoundary>
 
           {/* About TFS Section */}
-          <section id="about">
+          <section id="about" className="responsive-section-full">
             <AboutSection />
           </section>
 
           {/* About BAF Section */}
-          <section id="about-baf">
+          <section id="about-baf" className="responsive-section-full">
             <AboutBAFSection />
           </section>
 
           {/* Meet the Team Section */}
-          <section id="luminaries">
+          <section id="luminaries" className="responsive-section-full">
             <ModernLuminariesSection />
           </section>
 
           {/* Events Section */}
-          <section id="events">
+          <section id="events" className="responsive-section-full">
             <MobileOptimizedEventsSection />
           </section>
 
           {/* Flagship Conclave Sessions */}
-          <section id="conclave">
+          <section id="conclave" className="responsive-section-full">
             <MobileConclaveSection />
           </section>
 
           {/* Insights Section */}
-          <section id="insights">
+          <section id="insights" className="responsive-section-full">
             <OptimizedFinsightSection />
           </section>
 
           {/* Sponsors Section */}
-          <section id="sponsors">
+          <section id="sponsors" className="responsive-section-full">
             <SponsorsSection />
           </section>
 
           {/* Contact Us Section */}
-          <section id="contact">
+          <section id="contact" className="responsive-section-full">
             <ContactSection />
           </section>
 
           {/* Footer */}
-          <footer className="py-12 px-6 bg-finance-navy border-t border-finance-cyan/20">
-            <div className="container mx-auto">
+          <footer className="bg-finance-navy border-t border-finance-cyan/20 py-10 sm:py-12">
+            <div className="responsive-section">
               <div className="text-center">
                 <div className="flex items-center justify-center space-x-4 mb-6">
                   <div
@@ -432,8 +432,16 @@ export default function Index() {
                 </p>
 
                 <div className="text-finance-cyan/60 text-sm professional-text">
-                  © 2024 The Finance Symposium. All rights reserved. | Designed
-                  with ❤️ by Dhruv Moghe
+                  © 2024 The Finance Symposium. All rights reserved. | Developed
+                  by Dhruv Moghe, Yash Shinde and{" "}
+                  <a
+                    href="https://www.linkedin.com/in/pramit-datta-867629372/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline hover:text-finance-cyan transition-colors"
+                  >
+                    Pramit Datta
+                  </a>
                 </div>
               </div>
             </div>
