@@ -77,7 +77,7 @@ export default function AboutBAFSection() {
                 <p className="text-lg">
                   The BAF programme was effectively initiated at St. Xavier's
                   College from start of academic year 2022-23, as a self
-                  –financed 3-year undergraduate program affiliated to the
+                  financed 3-year undergraduate program affiliated to the
                   University of Mumbai. The aim is to provide solid platform of
                   updated content in the domain field to students who wish to
                   transform themselves through professional in the field of
@@ -89,7 +89,7 @@ export default function AboutBAFSection() {
 
           {/* Features Grid */}
           <motion.div
-            className="grid grid-cols-2 gap-6"
+            className="grid grid-cols-2 auto-rows-fr gap-6"
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -100,9 +100,9 @@ export default function AboutBAFSection() {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                className="relative group"
+                className="relative group h-full"
               >
-                <div className="bg-finance-navy-light/95 border border-finance-teal/30 p-6 rounded-xl text-center transform transition-all duration-300 group-hover:border-finance-teal/50 shadow-lg hover:shadow-xl">
+                <div className="flex h-full flex-col justify-center bg-finance-navy-light/95 border border-finance-teal/30 p-6 rounded-xl text-center transform transition-all duration-300 group-hover:border-finance-teal/50 shadow-lg hover:shadow-xl">
                   <feature.icon className="w-8 h-8 mx-auto mb-3 text-finance-teal" />
                   <div className="text-lg font-bold text-white mb-2">
                     {feature.title}

@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: "thefinancesymposiumm@gmail.com",
+    details: "tfs.outreach@xaviers.edu",
     subDetails: "For all inquiries and partnerships",
   },
 ];
@@ -105,7 +105,16 @@ export default function ContactSection() {
                     <h4 className="text-lg font-semibold text-finance-teal mb-1 font-league-spartan">
                       {info.title}
                     </h4>
-                    <p className="text-white/90 font-medium">{info.details}</p>
+                    {info.title === "Email" ? (
+                      <a
+                        href={`mailto:${info.details}`}
+                        className="text-white/90 font-medium hover:text-finance-teal"
+                      >
+                        {info.details}
+                      </a>
+                    ) : (
+                      <p className="text-white/90 font-medium">{info.details}</p>
+                    )}
                     <p className="text-white/70 text-sm">{info.subDetails}</p>
                   </div>
                 </motion.div>
