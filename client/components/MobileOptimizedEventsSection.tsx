@@ -511,7 +511,23 @@ export default function MobileOptimizedEventsSection() {
 
                                   <div className="relative z-10">
                                     <h5 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2 sm:mb-3 pr-8 group-hover:text-finance-cyan transition-colors duration-300">
-                                      {event.title}
+                                      {event.link ? (
+                                        <a
+                                          href={event.link}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          aria-label={`Open ${event.title} (opens in a new tab)`}
+                                          className="inline-flex items-center gap-2 hover:underline"
+                                        >
+                                          {event.title}
+                                          <ExternalLink
+                                            className="h-4 w-4 flex-shrink-0"
+                                            aria-hidden="true"
+                                          />
+                                        </a>
+                                      ) : (
+                                        event.title
+                                      )}
                                     </h5>
                                     {event.description && (
                                       <p className="text-white/80 text-sm sm:text-base leading-relaxed">
@@ -537,7 +553,23 @@ export default function MobileOptimizedEventsSection() {
 
                               <div className="relative z-10">
                                 <h5 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2 sm:mb-3 pr-8 group-hover:text-finance-cyan transition-colors duration-300">
-                                  {event.title}
+                                  {event.link ? (
+                                    <a
+                                      href={event.link}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      aria-label={`Open ${event.title} (opens in a new tab)`}
+                                      className="inline-flex items-center gap-2 hover:underline"
+                                    >
+                                      {event.title}
+                                      <ExternalLink
+                                        className="h-4 w-4 flex-shrink-0"
+                                        aria-hidden="true"
+                                      />
+                                    </a>
+                                  ) : (
+                                    event.title
+                                  )}
                                 </h5>
                                 {event.description && (
                                   <p className="text-white/80 text-sm sm:text-base leading-relaxed">

@@ -13,6 +13,7 @@ interface EventGroup {
   events?: {
     title: string;
     description?: string;
+    link?: string;
   }[];
 }
 
@@ -22,6 +23,7 @@ interface EventDetails {
   events?: {
     title: string;
     description?: string;
+    link?: string;
   }[];
   eventGroups?: EventGroup[];
   comingSoon?: boolean;

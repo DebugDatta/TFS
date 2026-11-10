@@ -126,16 +126,34 @@
     {
       "id": "session-4",
       "name": "Session 4 - Startups Panel",
-      "description": "This session brings together two dynamic founders who represent the new wave of Indian consumer brands. Their journeys capture the realities of product experimentation, cultural alignment, distribution challenges, transparent storytelling, and the grit required to build in public.",
+      "description": "This session brings together three dynamic founders who represent the new wave of Indian consumer brands. Their journeys capture the realities of product experimentation, cultural alignment, distribution challenges, transparent storytelling, and the grit required to build in public.",
       "startTime": "4:00 PM",
       "endTime": "5:30 PM",
       "speakers": [
         {
-          "id": "speaker-12",
-          "name": "Ms. Yuba Aga",
-          "linkedinId": "https://www.linkedin.com/in/yuba-aga-059672229/",
-          "photo": "https://media.licdn.com/dms/image/v2/D4D03AQGY9m-Hp5BE-Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1706428503971?e=1765411200&v=beta&t=AFD_uodCdCuR0tPdxK2fQp98JNr3WEF1m-vU059FDR8",
-          "bio": "Co-Founder, Manetain",
+          "id": "speaker-vinay-maheshwari",
+          "name": "Mr. Vinay Maheshwari",
+          "linkedinId": "https://www.linkedin.com/in/vinay-maheshwari-756b4297?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+          "photo": "",
+          "bio": "Founder, Health Factory",
+          "startTime": "4:00 PM",
+          "endTime": "5:30 PM"
+        },
+        {
+          "id": "speaker-ritu-david",
+          "name": "Ms. Ritu David",
+          "linkedinId": "https://www.linkedin.com/in/ritu-david?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+          "photo": "",
+          "bio": "Founder, Data Duck",
+          "startTime": "4:00 PM",
+          "endTime": "5:30 PM"
+        },
+        {
+          "id": "speaker-kiran-shah",
+          "name": "Mr. Kiran Shah",
+          "linkedinId": "https://www.linkedin.com/in/kiran-shah-goeszero?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+          "photo": "",
+          "bio": "Founder, Go Zero",
           "startTime": "4:00 PM",
           "endTime": "5:30 PM"
         }

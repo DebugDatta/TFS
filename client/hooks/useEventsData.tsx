@@ -3,6 +3,7 @@ import { useState, useEffect, useMemo } from "react";
 interface EventItem {
   title: string;
   description?: string;
+  link?: string;
 }
 
 interface EventGroup {

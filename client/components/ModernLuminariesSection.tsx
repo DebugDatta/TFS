@@ -110,13 +110,13 @@ const facultyMembers: TeamMember[] = [
     id: "kamalika-ray",
     name: "Ms. Kamalika Ray",
     title: "Assistant Professor",
-    bio: "Ms. Kamalika Ray, Assistant Professor, holds an M.Com. in Accountancy, PGDBA (Finance), EPG in Data Analytics, and is a Certified TRP, currently pursuing a Ph.D. With 3 years of teaching experience, her research interests include Accountancy and Finance, ESG, and Personal Finance.",
+    bio: "Ms. Kamalika Ray, Assistant Professor, holds an M.Com. in Accountancy, PGDBA (Finance), EPG in Data Analytics, is a Certified TRP, and has completed her Ph.D. (Commerce and Business Studies). With 3 years of teaching experience, her research interests include Accountancy and Finance, ESG, and Personal Finance.",
     image: "/placeholder.svg",
     email: "kamalika.ray@xaviers.edu",
     achievements: [
       "M.Com. in Accountancy, PGDBA (Finance)",
       "EPG in Data Analytics, Certified TRP",
-      "Currently pursuing Ph.D.",
+      "Ph.D. (Commerce and Business Studies)",
       "3 years of teaching experience",
     ],
     expertise: [
