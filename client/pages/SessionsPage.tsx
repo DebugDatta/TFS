@@ -11,6 +11,15 @@ const sessionGroups = [
         description:
           "Understanding financial risks and strategies to manage uncertainty in today’s evolving market landscape.",
       },
+      {
+        title: "Data Meets Finance: Guide to Career in Analytics",
+        description:
+          "Exploring the intersection of data analytics and financial decision-making.",
+      },
+      {
+        title: "Banking 101: Demystifying India's Backbone",
+        description: "Understanding the fundamentals of India's banking system.",
+      },
     ],
   },
   {

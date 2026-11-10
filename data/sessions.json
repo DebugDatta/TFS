@@ -126,7 +126,7 @@
     {
       "id": "session-4",
       "name": "Session 4 - Startups Panel",
-      "description": "This session brings together three dynamic founders who represent the new wave of Indian consumer brands. Their journeys capture the realities of product experimentation, cultural alignment, distribution challenges, transparent storytelling, and the grit required to build in public.",
+      "description": "This session brings together four dynamic founders who represent the new wave of Indian consumer brands. Their journeys capture the realities of product experimentation, cultural alignment, distribution challenges, transparent storytelling, and the grit required to build in public.",
       "startTime": "4:00 PM",
       "endTime": "5:30 PM",
       "speakers": [
@@ -154,6 +154,15 @@
           "linkedinId": "https://www.linkedin.com/in/kiran-shah-goeszero?utm_source=share_via&utm_content=profile&utm_medium=member_android",
           "photo": "",
           "bio": "Founder, Go Zero",
+          "startTime": "4:00 PM",
+          "endTime": "5:30 PM"
+        },
+        {
+          "id": "speaker-yuba-aga",
+          "name": "Ms. Yuba Aga",
+          "linkedinId": "https://www.linkedin.com/in/yuba-aga-059672229?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+          "photo": "",
+          "bio": "Co-founder, Manetain",
           "startTime": "4:00 PM",
           "endTime": "5:30 PM"
         }
