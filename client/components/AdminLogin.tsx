@@ -32,13 +32,21 @@ export default function AdminLogin({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const trimmedUsername = username.trim();
+    const trimmedPassword = password.trim();
+
+    if (!trimmedUsername || !trimmedPassword) {
+      setError("Please enter both username and password");
+      return;
+    }
+
     setIsLoading(true);
     setError("");
 
     // Add small delay for security (prevent brute force)
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    const success = login(username, password);
+    const success = login(trimmedUsername, trimmedPassword);
 
     if (success) {
       setUsername("");
@@ -122,7 +130,10 @@ export default function AdminLogin({
                   <Input
                     type="text"
                     value={username}
-                    onChange={(e) => setUsername(e.target.value)}
+                    onChange={(e) => {
+                      setUsername(e.target.value);
+                      if (error) setError("");
+                    }}
                     className="pl-10 bg-finance-navy/50 border-finance-gold/20 text-foreground focus:border-finance-gold"
                     placeholder="Enter username"
                     required
@@ -145,7 +156,10 @@ export default function AdminLogin({
                   <Input
                     type={showPassword ? "text" : "password"}
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                      if (error) setError("");
+                    }}
                     className="pl-10 pr-10 bg-finance-navy/50 border-finance-gold/20 text-foreground focus:border-finance-gold"
                     placeholder="Enter password"
                     required

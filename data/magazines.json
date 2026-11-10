@@ -3,19 +3,19 @@
     {
       "id": "finsight-edition-1",
       "title": "Finsight Magazine",
-      "edition": "First Edition",
+      "edition": "Third Edition",
       "description": "Exploring personal finance strategies and investment fundamentals",
       "cover": "https://raw.githubusercontent.com/Dhruv-dll/TFS_Final_3/refs/heads/main/data/placeholder-magazine.jpg",
-      "articles": 12,
+      "articles": 35,
       "downloads": 450,
-      "readTime": "25 mins",
-      "categories": ["Personal Finance", "Investment", "Financial Planning"],
+      "readTime": "2.5-3 hrs",
+      "categories": ["Personal Finance", "Investment", "Financial Planning", "AI & Technology", "Fintech", "Economy", "Business", "Startups", "Sustainability", "Policy", "Market Trends", "Book Reviews", "Digital Finance"],
       "highlights": [
         "Beginner's Guide to Stock Market",
         "Mutual Funds Explained",
         "Portfolio Diversification"
       ],
-      "link": "https://example.com/finsight-edition-1",
+      "link": "https://online.fliphtml5.com/ztvxy/xudn/#p=1",
       "isActive": true
     },
     {
@@ -33,7 +33,7 @@
         "GST Updates",
         "Foreign Investment Policy"
       ],
-      "link": "https://example.com/economic-news-laws",
+      "link": "https://online.fliphtml5.com/ztvxy/xudn/#p=1",
       "isActive": true
     },
     {
@@ -51,7 +51,7 @@
         "Risk Management",
         "Business Strategy"
       ],
-      "link": "https://example.com/finance-management",
+      "link": "https://online.fliphtml5.com/ztvxy/xudn/#p=1",
       "isActive": false
     }
   ],

@@ -114,7 +114,7 @@ export default function ModernNavigation({ scrolled }: ModernNavigationProps) {
           section: "events",
         },
         {
-          name: "Saturday Sessions",
+          name: "Sessions",
           href: "#events",
           icon: "📚",
           description: "Weekly learning sessions",
@@ -130,7 +130,7 @@ export default function ModernNavigation({ scrolled }: ModernNavigationProps) {
           eventId: "networking-events",
         },
         {
-          name: "Flagship Conclave",
+          name: "THE FINANCE SYMPOSIUM 2026",
           href: "#events",
           icon: "🏆",
           description: "Our main annual event",

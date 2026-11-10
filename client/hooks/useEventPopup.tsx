@@ -8,6 +8,14 @@ import {
   useCallback,
 } from "react";
 
+interface EventGroup {
+  year: string;
+  events?: {
+    title: string;
+    description?: string;
+  }[];
+}
+
 interface EventDetails {
   id: string;
   title: string;
@@ -15,6 +23,7 @@ interface EventDetails {
     title: string;
     description?: string;
   }[];
+  eventGroups?: EventGroup[];
   comingSoon?: boolean;
 }
 

@@ -54,9 +54,9 @@ export default function ECCStyleNavigation({
       href: "#events",
       icon: Calendar,
       dropdown: [
-        { name: "Saturday Sessions", href: "#events", icon: "📚" },
+        { name: "Sessions", href: "#events", icon: "📚" },
         { name: "Networking Events", href: "#events", icon: "🤝" },
-        { name: "Flagship Conclave", href: "#events", icon: "🏆" },
+        { name: "THE FINANCE SYMPOSIUM 2026", href: "#events", icon: "🏆" },
         { type: "separator" },
         { name: "Upcoming Events", href: "#events", icon: "📅" },
       ],

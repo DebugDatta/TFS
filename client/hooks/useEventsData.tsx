@@ -5,10 +5,16 @@ interface EventItem {
   description?: string;
 }
 
+interface EventGroup {
+  year: string;
+  events?: EventItem[];
+}
+
 interface EventDetails {
   id: string;
   title: string;
   events?: EventItem[];
+  eventGroups?: EventGroup[];
   comingSoon?: boolean;
 }
 
@@ -31,6 +37,7 @@ interface EventsConfig {
   pastEvents: {
     [key: string]: {
       events?: EventItem[];
+      groups?: EventGroup[];
       comingSoon?: boolean;
     };
   };
@@ -71,9 +78,9 @@ export function useEventsData() {
 
   const getTitleFromId = (id: string): string => {
     const titleMap: { [key: string]: string } = {
-      "saturday-sessions": "Saturday Sessions",
+      "saturday-sessions": "Sessions",
       "networking-events": "Networking Events",
-      "flagship-event": "Finance Symposium Conclave 2026–2027",
+      "flagship-event": "THE FINANCE SYMPOSIUM 2025",
     };
     return titleMap[id] || id;
   };
@@ -83,6 +90,7 @@ export function useEventsData() {
       id,
       title: getTitleFromId(id),
       events: eventConfig.events,
+      eventGroups: eventConfig.groups,
       comingSoon: eventConfig.comingSoon,
     }));
   }, [config.pastEvents]);

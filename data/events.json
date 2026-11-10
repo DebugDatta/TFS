@@ -1,18 +1,28 @@
 {
   "pastEvents": {
     "saturday-sessions": {
-      "events": [
+      "groups": [
         {
-          "title": "Risk Management: Navigating Financial Uncertainties",
-          "description": "Understanding financial risks and strategies to manage uncertainty."
+          "year": "2025",
+          "events": [
+            {
+              "title": "Risk Management: Navigating Financial Uncertainties",
+              "description": "Understanding financial risks and strategies to manage uncertainty."
+            }
+          ]
         },
         {
-          "title": "Investor’s Dilemma: Can Risk and Safety Ever Agree?",
-          "description": "Exploring the balance between investment risks and financial security."
-        },
-        {
-          "title": "Money Matters: Building Your Financial Future",
-          "description": "Discovering the fundamentals of financial planning and wealth creation."
+          "year": "2026",
+          "events": [
+            {
+              "title": "Investor’s Dilemma: Can Risk and Safety Ever Agree?",
+              "description": "Exploring the balance between investment risks and financial security."
+            },
+            {
+              "title": "Money Matters: Building Your Financial Future",
+              "description": "Discovering the fundamentals of financial planning and wealth creation."
+            }
+          ]
         }
       ],
       "comingSoon": false
@@ -32,6 +42,21 @@
       "comingSoon":true
     }
   },
-  "upcomingEvents": [],
+  "upcomingEvents": [
+    {
+      "id": "finance-symposium-2026",
+      "title": "THE FINANCE SYMPOSIUM 2026",
+      "date": "2026-12-10",
+      "time": "10:00 AM",
+      "location": "St. Xavier's College, Mumbai",
+      "description": "Our flagship annual event bringing together leaders, students, and finance enthusiasts for a day of learning, networking, and innovation.",
+      "registrationLink": "",
+      "countdown": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 0
+      }
+    }
+  ],
   "lastModified": 1739884000000
 }

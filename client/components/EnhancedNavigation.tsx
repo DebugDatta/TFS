@@ -44,12 +44,12 @@ export default function EnhancedNavigation({
       hoverIcon: "₹",
       dropdown: [
         {
-          name: "Saturday Sessions",
+          name: "Sessions",
           href: "/events/saturday-sessions",
           icon: "📚",
         },
         { name: "Networking", href: "/events/networking", icon: "🤝" },
-        { name: "Flagship Conclave", href: "/events/conclave", icon: "🏆" },
+        { name: "THE FINANCE SYMPOSIUM 2026", href: "/events/conclave", icon: "🏆" },
         { type: "separator" },
         { name: "Upcoming Events", href: "/events/upcoming", icon: "📅" },
       ],

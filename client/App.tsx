@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
+import SessionsPage from "./pages/SessionsPage";
 import NotFound from "./pages/NotFound";
 import PlaceholderPage from "./components/PlaceholderPage";
 import { SoundProvider } from "./components/SoundSystem";
@@ -36,16 +37,7 @@ const App = () => {
                 <Route path="/about" element={<About />} />
 
                 {/* Events Routes */}
-                <Route
-                  path="/events/saturday-sessions"
-                  element={
-                    <PlaceholderPage
-                      title="Saturday Sessions"
-                      description="Educational workshops and seminars held every Saturday, covering trending finance topics and practical skills."
-                      category="Educational Events"
-                    />
-                  }
-                />
+                <Route path="/events/saturday-sessions" element={<SessionsPage />} />
                 <Route
                   path="/events/networking"
                   element={
@@ -60,7 +52,7 @@ const App = () => {
                   path="/events/conclave"
                   element={
                     <PlaceholderPage
-                      title="Flagship Conclave"
+                      title="THE FINANCE SYMPOSIUM 2026"
                       description="Our premier annual event featuring keynote speakers, panel discussions, and industry insights."
                       category="Flagship Event"
                     />

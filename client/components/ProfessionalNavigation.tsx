@@ -38,11 +38,11 @@ export default function ProfessionalNavigation({
       icon: Calendar,
       dropdown: [
         {
-          name: "Saturday Sessions",
+          name: "Sessions",
           href: "/events/saturday-sessions",
         },
         { name: "Networking", href: "/events/networking" },
-        { name: "Flagship Conclave", href: "/events/conclave" },
+        { name: "THE FINANCE SYMPOSIUM 2026", href: "/events/conclave" },
         { type: "separator" },
         { name: "Upcoming Events", href: "/events/upcoming" },
       ],

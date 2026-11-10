@@ -44,7 +44,7 @@ interface UpcomingEvent {
 const pastEvents: EventCard[] = [
   {
     id: "saturday-sessions",
-    title: "Saturday Sessions",
+    title: "Sessions",
     description:
       "Weekly learning sessions that bridge theoretical knowledge with practical insights from industry experts.",
     icon: Calendar,
@@ -62,7 +62,7 @@ const pastEvents: EventCard[] = [
   },
   {
     id: "flagship-event",
-    title: "Previous Flagship Conclave",
+    title: "THE FINANCE SYMPOSIUM 2025",
     description:
       "Our premier annual event featuring top industry leaders, workshops, and competitions.",
     icon: Trophy,
@@ -134,7 +134,7 @@ const MobileEventCard: React.FC<{
               className="bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:border-white/40 backdrop-blur-sm transition-all duration-300 mobile-touch-target"
             >
               <Eye className="w-4 h-4 mr-2" />
-              <span>{event.id === "flagship-event" ? "Flagship Conclave" : "View Details"}</span>
+              <span>{event.id === "flagship-event" ? "THE FINANCE SYMPOSIUM 2025" : "View Details"}</span>
               <ChevronRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
@@ -211,14 +211,18 @@ const MobileTimelineEvent: React.FC<{
 
               {/* Event meta - stacked on mobile */}
               <div className="space-y-1 sm:space-y-0 sm:flex sm:flex-wrap sm:gap-3 text-xs sm:text-sm">
-                <div className="flex items-center text-cyan-400">
-                  <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                  <span className="truncate">{event.date}</span>
-                </div>
-                <div className="flex items-center text-green-400">
-                  <Clock className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                  <span className="truncate">{event.time}</span>
-                </div>
+                {event.title !== "THE FINANCE SYMPOSIUM 2026" && (
+                  <>
+                    <div className="flex items-center text-cyan-400">
+                      <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+                      <span className="truncate">{event.date}</span>
+                    </div>
+                    <div className="flex items-center text-green-400">
+                      <Clock className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+                      <span className="truncate">{event.time}</span>
+                    </div>
+                  </>
+                )}
                 <div className="flex items-center text-purple-400">
                   <MapPin className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                   <span className="truncate">{event.location}</span>
@@ -227,25 +231,27 @@ const MobileTimelineEvent: React.FC<{
             </div>
 
             {/* Countdown badge */}
-            <div className="ml-3 text-center flex-shrink-0">
-              <Badge
-                className={`${
-                  isEventPast
-                    ? "bg-gradient-to-r from-gray-600 to-gray-700"
+            {event.title !== "THE FINANCE SYMPOSIUM 2026" && (
+              <div className="ml-3 text-center flex-shrink-0">
+                <Badge
+                  className={`${
+                    isEventPast
+                      ? "bg-gradient-to-r from-gray-600 to-gray-700"
+                      : isEventToday
+                        ? "bg-gradient-to-r from-green-500 to-emerald-500"
+                        : isEventSoon
+                          ? "bg-gradient-to-r from-red-500 to-pink-500"
+                          : "bg-gradient-to-r from-finance-teal to-finance-cyan"
+                  } text-black font-bold px-2 py-1 text-xs`}
+                >
+                  {isEventPast
+                    ? `${Math.abs(daysLeft)}d ago`
                     : isEventToday
-                      ? "bg-gradient-to-r from-green-500 to-emerald-500"
-                      : isEventSoon
-                        ? "bg-gradient-to-r from-red-500 to-pink-500"
-                        : "bg-gradient-to-r from-finance-teal to-finance-cyan"
-                } text-black font-bold px-2 py-1 text-xs`}
-              >
-                {isEventPast
-                  ? `${Math.abs(daysLeft)}d ago`
-                  : isEventToday
-                    ? "TODAY"
-                    : `${daysLeft}d left`}
-              </Badge>
-            </div>
+                      ? "TODAY"
+                      : `${daysLeft}d left`}
+                </Badge>
+              </div>
+            )}
           </div>
 
           {/* Description */}
@@ -486,33 +492,63 @@ export default function MobileOptimizedEventsSection() {
                     </div>
                   ) : (
                     <div className="space-y-3 sm:space-y-4">
-                      <h4 className="text-lg sm:text-xl font-semibold text-cyan-400 mb-4 sm:mb-6">
-                        Events in this category:
-                      </h4>
+                      {selectedEvent.eventGroups && selectedEvent.eventGroups.length > 0 ? (
+                        selectedEvent.eventGroups.map((group, groupIndex) => (
+                          <div key={`${group.year}-${groupIndex}`} className="space-y-3 sm:space-y-4">
+                            <h4 className="text-lg sm:text-xl font-semibold text-cyan-400">
+                              {group.year}
+                            </h4>
 
-                      {selectedEvent.events?.map((event, index) => (
-                        <div
-                          key={index}
-                          className="group relative overflow-hidden"
-                        >
-                          <div className="relative bg-gradient-to-r from-slate-800/60 to-slate-700/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
-                            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-finance-teal to-finance-cyan rounded-full flex items-center justify-center text-xs sm:text-sm font-bold text-black">
-                              {index + 1}
-                            </div>
+                            {group.events?.map((event, index) => (
+                              <div
+                                key={`${group.year}-${index}`}
+                                className="group relative overflow-hidden"
+                              >
+                                <div className="relative bg-gradient-to-r from-slate-800/60 to-slate-700/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
+                                  <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-finance-teal to-finance-cyan rounded-full flex items-center justify-center text-xs sm:text-sm font-bold text-black">
+                                    {index + 1}
+                                  </div>
 
-                            <div className="relative z-10">
-                              <h5 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2 sm:mb-3 pr-8 group-hover:text-finance-cyan transition-colors duration-300">
-                                {event.title}
-                              </h5>
-                              {event.description && (
-                                <p className="text-white/80 text-sm sm:text-base leading-relaxed">
-                                  {event.description}
-                                </p>
-                              )}
+                                  <div className="relative z-10">
+                                    <h5 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2 sm:mb-3 pr-8 group-hover:text-finance-cyan transition-colors duration-300">
+                                      {event.title}
+                                    </h5>
+                                    {event.description && (
+                                      <p className="text-white/80 text-sm sm:text-base leading-relaxed">
+                                        {event.description}
+                                      </p>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        ))
+                      ) : (
+                        selectedEvent.events?.map((event, index) => (
+                          <div
+                            key={index}
+                            className="group relative overflow-hidden"
+                          >
+                            <div className="relative bg-gradient-to-r from-slate-800/60 to-slate-700/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
+                              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-finance-teal to-finance-cyan rounded-full flex items-center justify-center text-xs sm:text-sm font-bold text-black">
+                                {index + 1}
+                              </div>
+
+                              <div className="relative z-10">
+                                <h5 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2 sm:mb-3 pr-8 group-hover:text-finance-cyan transition-colors duration-300">
+                                  {event.title}
+                                </h5>
+                                {event.description && (
+                                  <p className="text-white/80 text-sm sm:text-base leading-relaxed">
+                                    {event.description}
+                                  </p>
+                                )}
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      ))}
+                        ))
+                      )}
                     </div>
                   )}
                 </div>

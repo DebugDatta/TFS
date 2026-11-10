@@ -7,7 +7,6 @@ import {
   Calendar,
   Download,
   Eye,
-  Share,
   Star,
   CaretLeft as ChevronLeft,
   CaretRight as ChevronRight,
@@ -40,21 +39,38 @@ interface Magazine {
   link?: string;
 }
 
+const MAGAZINE_LINK = "https://online.fliphtml5.com/ztvxy/xudn/#p=1";
+
 // Default magazine data
 const defaultMagazines: Magazine[] = [
   {
     id: "vol-1",
-    title: "Finsight Magazine Vol. 1",
-    edition: "Volume 1",
+    title: "Finsight Magazine - Third Edition",
+    edition: "Third Edition",
     date: "2024",
+    link: MAGAZINE_LINK,
     coverImage: "/placeholder.svg",
     description:
       "Our inaugural edition featuring comprehensive insights into finance, markets, and emerging technologies shaping the financial world.",
     featured: true,
-    articles: 15,
+    articles: 35,
     downloads: 3500,
-    readTime: "50 min",
-    categories: ["Finance", "Markets", "Technology", "Analysis"],
+    readTime: "2.5-3 hrs",
+    categories: [
+      "Personal Finance",
+      "Investment",
+      "Financial Planning",
+      "AI & Technology",
+      "Fintech",
+      "Economy",
+      "Business",
+      "Startups",
+      "Sustainability",
+      "Policy",
+      "Market Trends",
+      "Book Reviews",
+      "Digital Finance",
+    ],
     highlights: [
       "Market trends and analysis",
       "Investment strategies for students",
@@ -316,27 +332,14 @@ export default function OptimizedFinsightSection() {
               the latest financial insights.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <div className="flex justify-center">
               <Button
                 size="lg"
-                      className="bg-gradient-to-r from-[#5ce2d3] to-[#8dd9ea] hover:from-[#5ce2d3]/90 hover:to-[#8dd9ea]/90 text-white font-semibold px-6 sm:px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
-                onClick={() => {
-                  if (featuredMagazine.link) {
-                    window.open(featuredMagazine.link, "_blank");
-                  }
-                }}
+                className="bg-gradient-to-r from-[#5ce2d3] to-[#8dd9ea] hover:from-[#5ce2d3]/90 hover:to-[#8dd9ea]/90 text-white font-semibold px-6 sm:px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
+                onClick={() => window.open(MAGAZINE_LINK, "_blank")}
               >
                 <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Read Magazine
-              </Button>
-
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-white/30 text-white hover:bg-white/10 px-6 sm:px-8 py-3 rounded-xl transition-all duration-300"
-              >
-                <Share className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Subscribe
               </Button>
             </div>
           </div>

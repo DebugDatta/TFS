@@ -53,7 +53,7 @@ interface UpcomingEvent {
 const pastEvents: EventCard[] = [
   {
     id: "saturday-sessions",
-    title: "Saturday Sessions",
+    title: "Sessions",
     description:
       "Weekly learning sessions that bridge theoretical knowledge with practical insights from industry experts.",
     icon: Calendar,
@@ -71,7 +71,7 @@ const pastEvents: EventCard[] = [
   },
   {
     id: "flagship-event",
-    title: "Previous Flagship Conclave",
+    title: "THE FINANCE SYMPOSIUM 2025",
     description:
       "Our premier annual event featuring top industry leaders, workshops, and competitions.",
     icon: Trophy,
@@ -161,14 +161,18 @@ export default function EventsSection() {
                 {event.title}
               </h4>
               <div className="flex items-center space-x-4 text-sm text-finance-electric">
-                <span className="flex items-center space-x-1">
-                  <Calendar className="w-4 h-4" />
-                  <span>{event.date}</span>
-                </span>
-                <span className="flex items-center space-x-1">
-                  <Clock className="w-4 h-4" />
-                  <span>{event.time}</span>
-                </span>
+                {event.title !== "THE FINANCE SYMPOSIUM 2026" && (
+                  <>
+                    <span className="flex items-center space-x-1">
+                      <Calendar className="w-4 h-4" />
+                      <span>{event.date}</span>
+                    </span>
+                    <span className="flex items-center space-x-1">
+                      <Clock className="w-4 h-4" />
+                      <span>{event.time}</span>
+                    </span>
+                  </>
+                )}
                 <span className="flex items-center space-x-1">
                   <MapPin className="w-4 h-4" />
                   <span>{event.location}</span>
@@ -177,18 +181,20 @@ export default function EventsSection() {
             </div>
 
             {/* Countdown */}
-            <div className="text-center">
-              <div className="text-xs text-muted-foreground mb-1">
-                Days Left
+            {event.title !== "THE FINANCE SYMPOSIUM 2026" && (
+              <div className="text-center">
+                <div className="text-xs text-muted-foreground mb-1">
+                  Days Left
+                </div>
+                <motion.div
+                  className="text-2xl font-bold text-finance-gold"
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{ duration: 1, repeat: Infinity }}
+                >
+                  {event.countdown.days}
+                </motion.div>
               </div>
-              <motion.div
-                className="text-2xl font-bold text-finance-gold"
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 1, repeat: Infinity }}
-              >
-                {event.countdown.days}
-              </motion.div>
-            </div>
+            )}
           </div>
 
           <p className="text-foreground/80 mb-4">{event.description}</p>
@@ -512,56 +518,101 @@ export default function EventsSection() {
                       </p>
                     </motion.div>
                   ) : (
-                    <div className="space-y-4">
-                      <motion.h4
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: 0.3 }}
-                        className="text-xl font-semibold text-cyan-400 mb-6"
-                      >
-                        Events in this category:
-                      </motion.h4>
+                    <div className="space-y-6">
+                      {selectedEvent.eventGroups && selectedEvent.eventGroups.length > 0 ? (
+                        selectedEvent.eventGroups.map((group, groupIndex) => (
+                          <div key={`${group.year}-${groupIndex}`} className="space-y-4">
+                            <motion.h4
+                              initial={{ opacity: 0, x: -20 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ duration: 0.5, delay: 0.3 + groupIndex * 0.1 }}
+                              className="text-xl font-semibold text-cyan-400"
+                            >
+                              {group.year}
+                            </motion.h4>
 
-                      {selectedEvent.events?.map((event, index) => (
-                        <motion.div
-                          key={index}
-                          initial={{ opacity: 0, x: -30, scale: 0.95 }}
-                          animate={{ opacity: 1, x: 0, scale: 1 }}
-                          transition={{
-                            duration: 0.5,
-                            delay: 0.4 + index * 0.1,
-                            ease: [0.22, 1, 0.36, 1],
-                          }}
-                          className="group relative overflow-hidden"
-                        >
-                          <div className="relative bg-gradient-to-r from-slate-800/60 to-slate-700/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
-                            {/* Event number badge */}
-                            <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-sm font-bold text-black">
-                              {index + 1}
-                            </div>
+                            {group.events?.map((event, index) => (
+                              <motion.div
+                                key={`${group.year}-${index}`}
+                                initial={{ opacity: 0, x: -30, scale: 0.95 }}
+                                animate={{ opacity: 1, x: 0, scale: 1 }}
+                                transition={{
+                                  duration: 0.5,
+                                  delay: 0.4 + groupIndex * 0.1 + index * 0.08,
+                                  ease: [0.22, 1, 0.36, 1],
+                                }}
+                                className="group relative overflow-hidden"
+                              >
+                                <div className="relative bg-gradient-to-r from-slate-800/60 to-slate-700/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
+                                  <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-sm font-bold text-black">
+                                    {index + 1}
+                                  </div>
 
-                            {/* Hover glow effect */}
-                            <motion.div
-                              className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                              style={{
-                                background:
-                                  "linear-gradient(45deg, rgba(255,215,0,0.05) 0%, rgba(0,255,255,0.05) 100%)",
-                              }}
-                            />
+                                  <motion.div
+                                    className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                    style={{
+                                      background:
+                                        "linear-gradient(45deg, rgba(255,215,0,0.05) 0%, rgba(0,255,255,0.05) 100%)",
+                                    }}
+                                  />
 
-                            <div className="relative z-10">
-                              <h5 className="text-xl font-bold text-white mb-3 group-hover:text-amber-300 transition-colors duration-300">
-                                {event.title}
-                              </h5>
-                              {event.description && (
-                                <p className="text-white/80 leading-relaxed">
-                                  {event.description}
-                                </p>
-                              )}
-                            </div>
+                                  <div className="relative z-10">
+                                    <h5 className="text-xl font-bold text-white mb-3 group-hover:text-amber-300 transition-colors duration-300">
+                                      {event.title}
+                                    </h5>
+                                    {event.description && (
+                                      <p className="text-white/80 leading-relaxed">
+                                        {event.description}
+                                      </p>
+                                    )}
+                                  </div>
+                                </div>
+                              </motion.div>
+                            ))}
                           </div>
-                        </motion.div>
-                      ))}
+                        ))
+                      ) : (
+                        <div className="space-y-4">
+                          {selectedEvent.events?.map((event, index) => (
+                            <motion.div
+                              key={index}
+                              initial={{ opacity: 0, x: -30, scale: 0.95 }}
+                              animate={{ opacity: 1, x: 0, scale: 1 }}
+                              transition={{
+                                duration: 0.5,
+                                delay: 0.4 + index * 0.1,
+                                ease: [0.22, 1, 0.36, 1],
+                              }}
+                              className="group relative overflow-hidden"
+                            >
+                              <div className="relative bg-gradient-to-r from-slate-800/60 to-slate-700/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
+                                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center text-sm font-bold text-black">
+                                  {index + 1}
+                                </div>
+
+                                <motion.div
+                                  className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                  style={{
+                                    background:
+                                      "linear-gradient(45deg, rgba(255,215,0,0.05) 0%, rgba(0,255,255,0.05) 100%)",
+                                  }}
+                                />
+
+                                <div className="relative z-10">
+                                  <h5 className="text-xl font-bold text-white mb-3 group-hover:text-amber-300 transition-colors duration-300">
+                                    {event.title}
+                                  </h5>
+                                  {event.description && (
+                                    <p className="text-white/80 leading-relaxed">
+                                      {event.description}
+                                    </p>
+                                  )}
+                                </div>
+                              </div>
+                            </motion.div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>

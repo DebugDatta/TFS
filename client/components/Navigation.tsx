@@ -27,9 +27,9 @@ export default function Navigation({ scrolled }: NavigationProps) {
       href: "#",
       icon: Calendar,
       dropdown: [
-        { name: "Saturday Sessions", href: "/events/saturday-sessions" },
+        { name: "Sessions", href: "/events/saturday-sessions" },
         { name: "Networking", href: "/events/networking" },
-        { name: "Flagship Conclave", href: "/events/conclave" },
+        { name: "THE FINANCE SYMPOSIUM 2026", href: "/events/conclave" },
         { type: "separator" },
         { name: "Upcoming Events", href: "/events/upcoming" },
       ],

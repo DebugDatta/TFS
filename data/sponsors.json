@@ -1,6 +1,15 @@
 {
   "sponsors": [
     {
+      "id": "union-bank-of-india",
+      "name": "Union Bank of India",
+      "logo": "https://cf-images.assettype.com/newindianexpress/2024-05/28ecd5a0-cc44-4256-8121-2d18ccd28982/Union_Bank_of_India.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+      "industry": "Banking",
+      "description": "A leading public sector bank in India offering a comprehensive range of banking and financial services, including retail and corporate banking, MSME and agricultural financing, digital banking, and financial inclusion initiatives.",
+      "isActive": false,
+      "website": "https://www.unionbankofindia.bank.in/"
+    },
+    {
       "id": "citizen-cooperative-bank",
       "name": "Citizen Cooperative Bank",
       "logo": "https://cdn.builder.io/api/v1/image/assets%2Fb448f3665916406e992f77bf5e7d711e%2Fec784fa823e24e5b9b1285f4ba0a99fb",
