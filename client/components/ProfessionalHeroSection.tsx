@@ -179,18 +179,18 @@ export default function ProfessionalHeroSection() {
         <div className="text-center px-6 max-w-6xl mx-auto">
           {/* Professional Typography */}
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight finance-heading font-league-spartan"
+            className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-[0.95] tracking-tight finance-heading font-league-spartan"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <span className="block text-finance-cyan font-light mb-2 drop-shadow-lg">
+            <span className="block text-finance-cyan font-extrabold mb-1 drop-shadow-lg">
               The Finance
             </span>
-            <span className="block text-white font-bold drop-shadow-xl">
+            <span className="block text-white font-black drop-shadow-xl">
               Symposium
             </span>
-            <span className="block text-finance-teal text-2xl md:text-4xl lg:text-5xl font-normal mt-4 drop-shadow-lg">
+            <span className="block text-finance-teal text-2xl md:text-4xl lg:text-5xl font-bold tracking-wide mt-4 drop-shadow-lg">
               2026-2027
             </span>
           </motion.h1>
@@ -202,9 +202,9 @@ export default function ProfessionalHeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-finance-teal/20 to-finance-cyan/20 border border-finance-teal/50 rounded-full backdrop-blur-sm">
-              <div className="w-2 h-2 bg-finance-teal rounded-full mr-3 animate-pulse"></div>
-              <span className="text-finance-teal font-semibold text-sm md:text-base tracking-wide font-league-spartan">
+            <div className="inline-flex max-w-full items-center px-4 sm:px-6 py-3 bg-gradient-to-r from-finance-teal/20 to-finance-cyan/20 border border-finance-teal/50 rounded-full backdrop-blur-sm">
+              <div className="w-2 h-2 bg-finance-teal rounded-full mr-3 animate-pulse shrink-0"></div>
+              <span className="text-finance-teal font-extrabold text-xs sm:text-sm md:text-base tracking-wide font-league-spartan">
                 AN INITIATIVE BY DEPARTMENT OF ACCOUNTING AND FINANCE
               </span>
             </div>
