@@ -107,9 +107,6 @@ export default function OptimizedFlagshipConclaveSection() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white">
             FLAGSHIP <span className="text-finance-teal">CONCLAVE</span>
           </h2>
-          {!isMobile && (
-            <div className="w-32 h-1 bg-gradient-to-r from-finance-teal to-finance-mint mx-auto mb-6" />
-          )}
           <p className="text-base sm:text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto px-2">
             Exclusive sessions featuring industry experts, thought leaders, and
             innovators shaping the future of finance

@@ -38,16 +38,6 @@ const defaultConfig: SponsorsConfig = {
       website: "https://citizenbankdelhi.com",
     },
     {
-      id: "saint-gobain",
-      name: "Saint Gobain (through Mahantesh Associates)",
-      logo: "https://cdn.builder.io/api/v1/image/assets%2Fb448f3665916406e992f77bf5e7d711e%2F5b52ce39d6834f09a442954d4ab0e362",
-      industry: "Manufacturing",
-      description:
-        "Global leader in sustainable construction materials, partnering through Mahantesh Associates to enhance industry exposure.",
-      isActive: false,
-      website: "https://saint-gobain.com",
-    },
-    {
       id: "zest-global-education",
       name: "Zest Global Education",
       logo: "https://cdn.builder.io/api/v1/image/assets%2Fb448f3665916406e992f77bf5e7d711e%2F8d448a7548c345c0b5060392a99881c7",
@@ -58,14 +48,14 @@ const defaultConfig: SponsorsConfig = {
       website: "https://zestglobaleducation.com",
     },
     {
-      id: "iqas",
-      name: "IQAS",
-      logo: "https://cdn.builder.io/api/v1/image/assets%2Fb448f3665916406e992f77bf5e7d711e%2F6d57193e366e4d44b95dae677d4162dc",
-      industry: "Quality Assurance",
+      id: "accord-equipments",
+      name: "Accord Equipments",
+      logo: "/accord.jpeg",
+      industry: "Camera Equipment",
       description:
-        "Quality assurance and certification services provider supporting academic excellence standards.",
+        "Camera equipments partner providing comprehensive camera support for the entire TFS event.",
       isActive: false,
-      website: "https://iqas.co.in",
+      website: "https://www.accordequips.com/",
     },
   ],
   lastModified: Date.now(),

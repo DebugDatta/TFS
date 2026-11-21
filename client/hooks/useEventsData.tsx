@@ -53,28 +53,41 @@ const defaultConfig: EventsConfig = {
   },
   upcomingEvents: [],
 };
+let eventsRequest: Promise<EventsConfig> | null = null;
+
+function loadEventsConfig(): Promise<EventsConfig> {
+  if (!eventsRequest) {
+    eventsRequest = fetch("/data/events.json")
+      .then(async (response) => {
+        if (!response.ok) {
+          throw new Error(`Failed to load events (${response.status})`);
+        }
+        return (await response.json()) as EventsConfig;
+      })
+      .catch((error) => {
+        console.warn("Failed to load events:", error);
+        eventsRequest = null;
+        return defaultConfig;
+      });
+  }
+  return eventsRequest;
+}
 
 export function useEventsData() {
   const [config, setConfig] = useState<EventsConfig>(defaultConfig);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const loadEvents = async () => {
-      try {
-        const response = await fetch("/data/events.json");
-        if (response.ok) {
-          const data = await response.json();
-          setConfig(data);
-        }
-      } catch (error) {
-        console.warn("Failed to load events:", error);
-        setConfig(defaultConfig);
-      } finally {
+    let active = true;
+    loadEventsConfig().then((loadedConfig) => {
+      if (active) {
+        setConfig(loadedConfig);
         setLoading(false);
       }
+    });
+    return () => {
+      active = false;
     };
-
-    loadEvents();
   }, []);
 
   const getTitleFromId = (id: string): string => {

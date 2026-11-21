@@ -176,7 +176,7 @@ export default function EnhancedNavigation({
               >
                 <div className="flex items-center justify-center border border-finance-electric/30 rounded-xl bg-finance-navy w-[75px] h-[75px] mt-[1px] ml-[-5px]">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F929e4df9940a4d789ccda51924367667%2F73bba102e8354fd08a042b5f690f50cd"
+                    src="/logo.jpeg"
                     alt="St. Xavier's Logo"
                     className="w-full h-full object-cover rounded-xl"
                   />
@@ -187,7 +187,7 @@ export default function EnhancedNavigation({
 
             <div className="hidden md:block">
               <motion.h1
-                className="text-xl font-bold bg-gradient-to-r from-finance-gold to-finance-electric bg-clip-text text-transparent"
+                className="text-xl font-bold font-league-spartan bg-gradient-to-r from-finance-gold to-finance-electric bg-clip-text text-transparent"
                 animate={{
                   backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                 }}

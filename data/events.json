@@ -46,9 +46,30 @@
       "comingSoon": false
     },
     "flagship-event": {
-      "events": [
+      "groups": [
+        {
+          "year": "2025",
+          "events": [
+            {
+              "title": "Session 1 - Core Finance Panel",
+              "description": "This session discusses how senior finance leaders navigate uncertainty, make decisions under pressure, and convert challenges into strategic opportunities.\n10:00 AM to 11:30 AM\n4 Speakers"
+            },
+            {
+              "title": "Session 2 - Media and Creativity Panel",
+              "description": "This panel aims to explore how storytelling intersects with business, how creative risks influence markets, how platforms shape culture, and how emerging creators can find their voice in an increasingly competitive space.\n11:45 AM to 1:15 PM\n3 Speakers"
+            },
+            {
+              "title": "Session 3 - Sustainability Panel",
+              "description": "This session features three distinguished leaders from financial services, automotive, and corporate sectors, with over 50 years of combined experience in sustainability strategy, ESG reporting, corporate responsibility, and organizational transformation in India.\n2:15 PM to 3:45 PM\n3 Speakers"
+            },
+            {
+              "title": "Session 4 - Startups Panel",
+              "description": "This session brings together four dynamic founders who represent the new wave of Indian consumer brands. Their journeys capture the realities of product experimentation, cultural alignment, distribution challenges, transparent storytelling, and the grit required to build in public.\n4:00 PM to 5:30 PM\n3 Speakers"
+            }
+          ]
+        }
       ],
-      "comingSoon":true
+      "comingSoon": false
     }
   },
   "upcomingEvents": [

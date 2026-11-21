@@ -136,7 +136,7 @@ export default function ProfessionalNavigation({
                   className="flex items-center justify-center border border-finance-teal/30 rounded-lg"
                   style={{
                     backgroundImage:
-                      "url(https://cdn.builder.io/api/v1/image/assets%2F929e4df9940a4d789ccda51924367667%2F73bba102e8354fd08a042b5f690f50cd)",
+                      "url(/logo.jpeg)",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
                     backgroundSize: "cover",
@@ -148,7 +148,7 @@ export default function ProfessionalNavigation({
             </div>
 
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-finance-cyan finance-heading">
+              <h1 className="text-xl font-bold font-league-spartan text-finance-cyan finance-heading">
                 The Finance Symposium
               </h1>
               <p className="text-sm text-finance-teal/80 professional-text">

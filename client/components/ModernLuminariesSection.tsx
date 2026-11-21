@@ -579,31 +579,33 @@ export default function ModernLuminariesSection() {
                         {selectedMember.title}
                       </motion.p>
 
-                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5 }}
-                        className="flex space-x-3"
-                      >
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="text-finance-teal border border-finance-teal/30 hover:bg-finance-teal/10"
+                      {activeGroup === "leadership" && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.5 }}
+                          className="flex space-x-3"
                         >
-                          <Mail className="w-4 h-4 mr-2" />
-                          Contact
-                        </Button>
-                        {selectedMember.linkedin && (
                           <Button
                             variant="ghost"
                             size="sm"
                             className="text-finance-teal border border-finance-teal/30 hover:bg-finance-teal/10"
                           >
-                            <Linkedin className="w-4 h-4 mr-2" />
-                            LinkedIn
+                            <Mail className="w-4 h-4 mr-2" />
+                            Contact
                           </Button>
-                        )}
-                      </motion.div>
+                          {selectedMember.linkedin && (
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="text-finance-teal border border-finance-teal/30 hover:bg-finance-teal/10"
+                            >
+                              <Linkedin className="w-4 h-4 mr-2" />
+                              LinkedIn
+                            </Button>
+                          )}
+                        </motion.div>
+                      )}
                     </div>
                   </div>
                 </div>

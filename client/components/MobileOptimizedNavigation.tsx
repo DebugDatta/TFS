@@ -285,7 +285,7 @@ export default function MobileOptimizedNavigation({
                 className="flex items-center justify-center rounded-xl"
                 style={{
                   backgroundImage:
-                    "url(https://cdn.builder.io/api/v1/image/assets%2F929e4df9940a4d789ccda51924367667%2F73bba102e8354fd08a042b5f690f50cd)",
+                    "url(/logo.jpeg)",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   backgroundSize: "cover",
@@ -316,7 +316,7 @@ export default function MobileOptimizedNavigation({
               className={`${isMobile ? "hidden" : "hidden sm:block"} ml-3 sm:ml-4`}
             >
               <motion.h1
-                className={`font-bold bg-gradient-to-r from-finance-gold to-finance-electric bg-clip-text text-transparent ${
+                className={`font-league-spartan font-bold bg-gradient-to-r from-finance-gold to-finance-electric bg-clip-text text-transparent ${
                   isTablet ? "text-lg" : "text-xl"
                 }`}
                 animate={{

@@ -15,6 +15,7 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { useEventPopup } from "../hooks/useEventPopup";
 import { useEventsData } from "../hooks/useEventsData";
+import TFS2025ConclaveContent from "./TFS2025ConclaveContent";
 
 interface EventCard {
   id: string;
@@ -477,7 +478,9 @@ export default function MobileOptimizedEventsSection() {
 
                 {/* Content */}
                 <div className="p-6 sm:p-8 max-h-[60vh] overflow-y-auto custom-scrollbar">
-                  {selectedEvent.comingSoon ? (
+                  {selectedEvent.id === "flagship-event" ? (
+                    <TFS2025ConclaveContent />
+                  ) : selectedEvent.comingSoon ? (
                     <div className="text-center py-8 sm:py-12 md:py-16">
                       <div className="text-4xl sm:text-6xl md:text-8xl mb-4 sm:mb-6">
                         🚧

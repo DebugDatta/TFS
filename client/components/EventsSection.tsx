@@ -24,6 +24,7 @@ import { useEventPopup } from "../hooks/useEventPopup";
 import { useEventsData } from "../hooks/useEventsData";
 import { ModernEventCard } from "./ModernEventCard";
 import { ModernTimelineEvent } from "./ModernTimelineEvent";
+import TFS2025ConclaveContent from "./TFS2025ConclaveContent";
 
 interface EventCard {
   id: string;
@@ -488,7 +489,9 @@ export default function EventsSection() {
 
                 {/* Content */}
                 <div className="p-8 max-h-[60vh] overflow-y-auto custom-scrollbar">
-                  {selectedEvent.comingSoon ? (
+                  {selectedEvent.id === "flagship-event" ? (
+                    <TFS2025ConclaveContent />
+                  ) : selectedEvent.comingSoon ? (
                     <motion.div
                       initial={{ opacity: 0, scale: 0.9 }}
                       animate={{ opacity: 1, scale: 1 }}

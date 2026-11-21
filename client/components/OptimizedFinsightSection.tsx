@@ -39,7 +39,7 @@ interface Magazine {
   link?: string;
 }
 
-const MAGAZINE_LINK = "https://online.fliphtml5.com/ztvxy/xudn/#p=1";
+const MAGAZINE_LINK = "https://online.fliphtml5.com/ztvxy/xudn/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaAVnmItleHRuA2FlbQIxMQBwZG9mAmZkaWQWUSUfUxDMW3HDIpnyyNhq9O_kTeiC0HNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp9IMmz_VRtnAXDyXHj-qaCLl1uOKDPzG-_k4_xlVJc6v5c5eW_suFs9c_6U8_aem_iwlZ_eAFzNDqLZa9_T4VQA#p=1";
 
 // Default magazine data
 const defaultMagazines: Magazine[] = [
@@ -92,16 +92,15 @@ export default function OptimizedFinsightSection() {
   // Combine saved magazines with default magazines, mark first saved as featured if it exists
   const allMagazines: Magazine[] =
     savedMagazines.length > 0
-      ? savedMagazines.map((mag, idx) => ({
+      ? savedMagazines
+          .filter((mag) => mag.isActive)
+          .map((mag, idx) => ({
           ...mag,
           date: new Date().getFullYear().toString(),
           coverImage: mag.cover,
           featured: idx === 0,
-        }))
+          }))
       : defaultMagazines;
-
-  const featuredMagazine =
-    allMagazines.find((mag) => mag.featured) || allMagazines[0];
 
   const MagazineCard = ({
     magazine,
@@ -304,15 +303,15 @@ export default function OptimizedFinsightSection() {
 
         {/* Featured Magazine Display */}
         <motion.div
-          className="flex justify-center mb-12 sm:mb-16 lg:mb-20"
+          className="mb-12 sm:mb-16 lg:mb-20"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <div className="relative">
-            <MagazineCard magazine={featuredMagazine} featured={true} />
-
-            {/* Stats - Mobile Responsive */}
+            <div className="flex justify-center w-full">
+            {allMagazines.map((magazine) => (
+              <MagazineCard key={magazine.id} magazine={magazine} featured />
+            ))}
           </div>
         </motion.div>
 

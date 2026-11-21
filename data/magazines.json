@@ -1,10 +1,10 @@
 {
   "magazines": [
     {
-      "id": "finsight-edition-1",
+      "id": "finsight-volume-3",
       "title": "Finsight Magazine",
-      "edition": "Third Edition",
-      "description": "Exploring personal finance strategies and investment fundamentals",
+      "edition": "Volume 3",
+      "description": "Exploring personal finance strategies and investment fundamentals.",
       "cover": "https://raw.githubusercontent.com/Dhruv-dll/TFS_Final_3/refs/heads/main/data/placeholder-magazine.jpg",
       "articles": 35,
       "downloads": 450,
@@ -17,42 +17,6 @@
       ],
       "link": "https://online.fliphtml5.com/ztvxy/xudn/#p=1",
       "isActive": true
-    },
-    {
-      "id": "economic-news-laws",
-      "title": "Economic News & Laws",
-      "edition": "Special Feature",
-      "description": "Latest economic updates and financial regulations affecting India",
-      "cover": "https://raw.githubusercontent.com/Dhruv-dll/TFS_Final_3/refs/heads/main/data/placeholder-magazine.jpg",
-      "articles": 8,
-      "downloads": 320,
-      "readTime": "18 mins",
-      "categories": ["Economics", "Laws", "Policy"],
-      "highlights": [
-        "New RBI Regulations",
-        "GST Updates",
-        "Foreign Investment Policy"
-      ],
-      "link": "https://online.fliphtml5.com/ztvxy/xudn/#p=1",
-      "isActive": true
-    },
-    {
-      "id": "finance-management",
-      "title": "Finance & Management",
-      "edition": "Knowledge Series",
-      "description": "Corporate finance insights and management best practices",
-      "cover": "https://raw.githubusercontent.com/Dhruv-dll/TFS_Final_3/refs/heads/main/data/placeholder-magazine.jpg",
-      "articles": 10,
-      "downloads": 280,
-      "readTime": "22 mins",
-      "categories": ["Corporate Finance", "Management", "Business"],
-      "highlights": [
-        "Financial Analysis Techniques",
-        "Risk Management",
-        "Business Strategy"
-      ],
-      "link": "https://online.fliphtml5.com/ztvxy/xudn/#p=1",
-      "isActive": false
     }
   ],
   "lastModified": 1757600810272

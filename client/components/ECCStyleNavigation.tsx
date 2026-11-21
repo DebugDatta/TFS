@@ -216,7 +216,7 @@ export default function ECCStyleNavigation({
             >
               <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-finance-navy border border-finance-teal/40 rounded-lg overflow-hidden">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F929e4df9940a4d789ccda51924367667%2F73bba102e8354fd08a042b5f690f50cd"
+                  src="/logo.jpeg"
                   alt="St. Xavier's College"
                   className="w-full h-full object-cover"
                 />
@@ -240,7 +240,7 @@ export default function ECCStyleNavigation({
 
             {/* Title */}
             <div className="hidden sm:block">
-              <h1 className="text-sm md:text-lg font-bold text-finance-teal font-bebas-neue">
+              <h1 className="text-sm md:text-lg font-bold text-finance-teal font-league-spartan">
                 The Finance Symposium
               </h1>
               <p className="text-xs text-muted-foreground">

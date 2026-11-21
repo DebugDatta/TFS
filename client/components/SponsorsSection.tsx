@@ -59,16 +59,6 @@ const sponsors: Sponsor[] = [
     website: "https://www.icici.bank.in/",
   },
   {
-    id: "iqas",
-    name: "IQAS",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2Fb448f3665916406e992f77bf5e7d711e%2F6d57193e366e4d44b95dae677d4162dc",
-    industry: "Quality Assurance",
-    description:
-      "Quality assurance and certification services provider supporting academic excellence standards.",
-    isActive: false,
-    website: "https://iqas.co.in",
-  },
-  {
     id: "KLAW",
     name: "KLAW",
     logo: "/Icons/png2jpg/KLAW LOGO.jpg",
@@ -77,16 +67,6 @@ const sponsors: Sponsor[] = [
       "Professional legal firm providing comprehensive business and corporate advisory services.",
     isActive: false,
     website: "https://getklaw.com/",
-  },
-  {
-    id: "saint-gobain",
-    name: "Saint Gobain (through Mahantesh Associates)",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2Fb448f3665916406e992f77bf5e7d711e%2F5b52ce39d6834f09a442954d4ab0e362",
-    industry: "Manufacturing",
-    description:
-      "Global leader in sustainable construction materials, partnering through Mahantesh Associates to enhance industry exposure.",
-    isActive: false,
-    website: "https://saint-gobain.com",
   },
   {
     id: "SBIGI",
@@ -127,6 +107,16 @@ const sponsors: Sponsor[] = [
       "Strategic consulting partner offering marketing, design, and operations solutions.",
     isActive: false,
     website: "",
+  },
+  {
+    id: "accord-equipments",
+    name: "Accord Equipments",
+    logo: "/accord.jpeg",
+    industry: "Camera Equipment",
+    description:
+      "Camera equipments partner providing comprehensive camera support for the entire TFS event.",
+    isActive: false,
+    website: "https://www.accordequips.com/",
   },
 ];
 

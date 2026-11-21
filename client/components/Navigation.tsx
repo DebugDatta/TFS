@@ -93,7 +93,7 @@ export default function Navigation({ scrolled }: NavigationProps) {
             </div>
 
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-glow bg-gradient-to-r from-finance-gold to-finance-electric bg-clip-text text-transparent">
+              <h1 className="text-xl font-bold font-league-spartan text-glow bg-gradient-to-r from-finance-gold to-finance-electric bg-clip-text text-transparent">
                 The Finance Symposium
               </h1>
               <p className="text-sm text-muted-foreground">

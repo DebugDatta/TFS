@@ -59,7 +59,6 @@ export default function FlagshipConclaveSection() {
             <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               FLAGSHIP <span className="text-finance-teal">CONCLAVE</span>
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-finance-teal to-finance-mint mx-auto mb-6" />
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
               Exclusive sessions featuring industry experts, thought leaders,
               and innovators shaping the future of finance
