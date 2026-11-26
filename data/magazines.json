@@ -1,6 +1,42 @@
 {
   "magazines": [
     {
+      "id": "finsight-volume-1",
+      "title": "Finsight Magazine",
+      "edition": "Volume 1",
+      "description": "The first edition of Finsight, covering essential financial insights, market perspectives, and student viewpoints.",
+      "cover": "https://raw.githubusercontent.com/Dhruv-dll/TFS_Final_3/refs/heads/main/data/placeholder-magazine.jpg",
+      "articles": 32,
+      "downloads": 1200,
+      "readTime": "2.5 hrs",
+      "categories": ["Personal Finance", "Investment", "Financial Planning", "Market Trends"],
+      "highlights": [
+        "Financial fundamentals",
+        "Investment insights",
+        "Market perspectives"
+      ],
+      "link": "https://heyzine.com/flip-book/3f3a9a2239.html#page/1",
+      "isActive": true
+    },
+    {
+      "id": "finsight-volume-2",
+      "title": "Finsight Magazine",
+      "edition": "Volume 2",
+      "description": "The second edition of Finsight, exploring emerging financial ideas, strategies, and expert perspectives.",
+      "cover": "https://raw.githubusercontent.com/Dhruv-dll/TFS_Final_3/refs/heads/main/data/placeholder-magazine.jpg",
+      "articles": 28,
+      "downloads": 980,
+      "readTime": "2 hrs",
+      "categories": ["Finance", "Economy", "Business", "Fintech"],
+      "highlights": [
+        "Emerging financial trends",
+        "Business insights",
+        "Fintech perspectives"
+      ],
+      "link": "https://drive.google.com/file/d/1-J9Up1hgVDC0DQ6cdeCStAy-l_uFPx7O/view?usp=drivesdk",
+      "isActive": true
+    },
+    {
       "id": "finsight-volume-3",
       "title": "Finsight Magazine",
       "edition": "Volume 3",

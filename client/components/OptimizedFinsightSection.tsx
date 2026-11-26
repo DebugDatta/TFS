@@ -308,7 +308,7 @@ export default function OptimizedFinsightSection() {
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-            <div className="flex justify-center w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full">
             {allMagazines.map((magazine) => (
               <MagazineCard key={magazine.id} magazine={magazine} featured />
             ))}
